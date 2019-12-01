@@ -1,0 +1,62 @@
+\chapter{Algebra delle derivate}
+Teorema: siano $f, g:I\rightarrow\mathbb{R}, \; I\subset\mathbb{R},\; x_0\in I$ due funzioni derivabili in $x_0$, allora la somma, il prodotto e il rapporto tra le due 
+funzioni \`e una funzione derivabile.
+\begin{itemize}
+\item $(f\pm g)'(x_0)=f'(x_0)\pm g'(x_0)$
+\item $(fg)'(x_0)=f'(x_0)g(x_0)+ f(x_0)g'(x_0)$
+\begin{itemize}
+\item Caso particolare: $(kf)'(x_0)=kf'(x_0),\;k\in\mathbb{R}$
+\end{itemize}
+\item $(\dfrac{f}{g})'(x_0)=\dfrac{f'(x_0)g(x_0)-f(x_0)g'(x_0)}{g^2(x_0)}$
+\end{itemize}
+\section{Dimostrazione derivata del prodotto}
+Sia $x_0\in I;\forall h\neq 0$ si scriva il rapporto incrementale: $\frac{(fg)(x_0+h)-(fg)(x_0)}{h}=\frac{f(x_0+h)g(x_0+h)-f(x_0)g(x_0)}{h}=$\\
+$=\frac{f(x_0+h)g(x_0+h)-f(x_0)g(x_0+h)+f(x_0)g(x_0+h)-f(x_0)g(x_0)}{h}=$\\
+$g(x_0+h)\frac{[f(x_0+h)-f(x_0)]}{h}+f(x_0)\frac{[g(x_0+h)-g(x_0)]}{h}$.
+\begin{itemize}
+\item $g(x_0+h)\xrightarrow[h\rightarrow 0]{}g(x_0)$\\
+\item $\frac{[f(x_0+h)-f(x_0)]}{h}\xrightarrow[h\rightarrow 0]{}f'(x_0)$\\
+\item $\frac{[g(x_0+h)-g(x_0)]}{h}\xrightarrow[h\rightarrow 0]{}g'(x_0)$\\
+\end{itemize}
+$\exists\lim\limits_{h\rightarrow 0}\frac{(fg)(x_0+h)-(fg)(x_0)}{h}$ finito, perci\`o $fg$ \`e derivabile in $x_0$, inoltre:
+\begin{equation}
+(fg)'(x_0)=f'(x_0)g(x_0)+ f(x_0)g'(x_0)
+\end{equation}
+\section{Derivata della funzione composta}
+Sia $f:I\rightarrow\mathbb{R}$ una funzione tale che $f(I)\subset J$ e $g:J\rightarrow\mathbb{R}$ una funzione. Sia $x_0\in I$ e $f$ derivabile in $x_0$ e $g$ derivabile in 
+$y_0=f(x_0)\Rightarrow (g\circ f):I\rightarrow\mathbb{R}$ \`e derivabile in $x_0$.
+\begin{equation}
+(g\circ f)'(x_0)=(g(f(x_0)))'=g'(f(x_0))\cdot f'(x_0)
+\end{equation}
+\subsubsection{Casi particolari}
+\begin{itemize}
+\item $(e^{f(x)})'=e^{f(x)}\cdot f'(x)$
+\item $(\log |f(x)|)'=\frac{1}{f(x)}\cdot f'(x)$
+\item $((f(x))^n)'=n(f(x))^{n-1}\cdot f'(x)$
+\end{itemize}
+\section{Derivata della funzione inversa}
+$I$ intervallo, $x_0\in I$, $f:I\rightarrow\mathbb{R}$ continua e strettamente monotona, se $f$ \`e derivabile in $x_0$ e $f'(x_0)\neq 0$, allora $f^{-1}:f(I)\rightarrow I$
+allora l'inversa \`e derivabile in $y_0=f(x_0)$ e $(f^{-1})'(y_0)=\frac{1}{f'(x_0)}=\frac{1}{f'(f^{-1}(y_0))}$.
+\subsubsection{Dimostrazione}
+Si ponga $y=f(x)$, ovvero $x=f^{-1}(y)$. Essendo $f$ e $f^{-1}$ continue, si ha $y\rightarrow y_0=f(x_0)\Leftrightarrow x\rightarrow x_0$. Allora $\lim\limits_{y\rightarrow 
+y_0}\frac{f^{-1}(y)-f^{-1}(y_0)}{y-y_0}=\lim\limits_{x\rightarrow x_0}\frac{x-x_0}{f(x)-f(x_0)}=\lim\limits_{x\rightarrow x_0}\frac{1}{\frac{f(x)-f(x_0)}{x-x_0}}=\frac{1}
+{f'(x_0)}\Rightarrow (f^{-1})'(y_0)=\frac{1}{f'(f^{-1}(y_0))})$.
+\subsubsection{Osservazioni}
+\begin{itemize}
+\item Il teorema \`e ancora valido se $f'(x_0)=0$ e si ha $(f^{-1})'(y_0)=+\infty$ se $f$ \`e strettamente crescente, se \`e strettamente decrescente \`e uguale a 
+$(f^{-1})'(y_0)=-\infty$. 
+\item Se $f'(x_0)=\pm\infty\Rightarrow (f^{-1})'(y_0)=0$.
+\end{itemize}
+\section{Derivate delle funzioni goniometriche inverse}
+\begin{itemize}
+\item $(\arctan x)'=\frac{1}{1+x^2}\forall x\in\mathbb{R}$
+\item $(\arcsin x)'=\frac{1}{\sqrt{1-x^2}}\forall x\in ]-1;1[$
+\item $(\arccos x)'=-\frac{1}{\sqrt{1-x^2}}\forall x\in ]-1;1[$
+\end{itemize}
+\subsection{$(\arctan x)'$}
+$\tan x:]-\frac{\pi}{2};\frac{\pi}{2}[\rightarrow\mathbb{R}$, continua, crescente e derivabile, $(\tan x)'=1+\tan^2 x(\neq0)(=\frac{1}{\cos^2 x})$.\\
+$(\arctan)'(y)=\frac{1}{\tan'(\arctan y)}=\frac{1}{1+\tan^2(\arctan y)}=\frac{1}{1+y^2}$.
+\subsection{$(\arcsin x)'$}
+$\sin x:[-\frac{\pi}{2};\frac{\pi}{2}]\rightarrow[-1;1]$, continua, crescente e $(\sin x)'=\cos x\neq 0 x\neq -\frac{\pi}{2}\lor \frac{\pi}{2}$.\\
+$(\arcsin)'(y)=\frac{1}{(\sin)'(\arcsin y)}=\frac{1}{\cos(\arcsin y)}$. Considerando: $\cos^2 t+\sin^2 t=1 \forall t$, allora $\cos t=\pm\sqrt{1-\sin^2 t}$, e se $t\in]-
+\frac{\pi}{2};-\frac{\pi}{2}[$ il coseno \`e positivo. Perci\`o: $\frac{1}{\cos(\arcsin y)}=\frac{1}{+\sqrt{1-\sin^2(\arcsin y)}}=\frac{1}{\sqrt{1-y^2}}$.

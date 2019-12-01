@@ -1,0 +1,68 @@
+\chapter{Cenni sulle equazioni differenziali ordinarie}
+Un'equazione differenziale di ordine $n$ in un intervallo $I\subseteq\mathbb{R}$ \`e un espressione del tipo:
+\begin{itemize}
+\item $f^{(n)}=f(x;y;y';y'';\cdots;y^{(n-1)})$.
+\item $F(x;y;y';y'';\cdots;y^{(n)})$
+\end{itemize}
+Una funzione $y=y(x)$ definita e derivabile $n$ volte in $I$ si dice soluzione dell'equazione, in $I$ se $y^{(n)}(x)=f(x;y(x);y'(x);\cdots;y^{(n-1)}(x))\;\;\forall x\in I$, 
+oppure $F(x;y(x);y'(x);y''(x);\cdots;y^{(n)}(x))=0\;\;\forall x\in I$. Verranno considerati alcuni casi per $n=1$ e $n=2$. Si vogliono studiare equazioni del tipo:
+\begin{itemize}
+\item $y'=f(x;y)$ o $F(x;y;y')=0$
+\item $y''=f(x;y;y')$ o $F(x;y;y';y'')=0$
+\end{itemize}
+Si vogliono trovare tutte le funzioni $y(x)$, trovare ovvero l'integrale generale, definite in $I\subseteq\mathbb{R}$ che verificano $a$ o $b$.
+\section{Esempi}
+\begin{itemize}
+\item $y'(x)=g(x)$, con $g(x):I\rightarrow\mathbb{R}$ una funzione assegnata continua, $y(x)=\int g(x)dx$ insieme delle soluzioni.
+\item $y'(x)=ay(x)$, $a\in\mathbb{R}$ fissato $I=\mathbb{R}$ $y(x)=ce^{ax}$. $y(x)=0$ \`e soluzione, Se $(x)\neq 0$ l'equazione sopra \`e equivalente a $\frac{y'(x}{y(x)}=a$, 
+$\int \frac{y'(x)}{y(x)}dx=\int adx\Leftrightarrow\log |y(x)|=ax+c\;\;c\int\mathbb{R}$, $\Leftrightarrow|y(x)|=e^{ax+c}\Leftrightarrow|y(x)|=e^ce^ax$m essendo $e^c$ una costante
+positiva lo pongo $k=e^c$, $y(x)=\pm ke^{ax}\;\;k>0$, $y(x)=ke^{ax}\;\;\forall k\neq 0$. Considerando anche $k=0$, si include la soluzione banale. In definitiva tutte le 
+soluzioni possibili si $y'=ay$ sono $y(x)=ke^{ax}\;\;k\in\mathbb{R}$
+\item $y'=2y+x$ $f(x;y)=2y+x$, l'equazione ammette infinite soluzioni $y(x)=ce^{2x}-\frac{x}{2}-\frac{1}{4}$
+\item $y''=x$ equazione differenziale del secondo ordine: $y(x)=\iint xdx$, $y(x)=\frac{1}{6}x^3+c_1x+c_2$.
+\item $y''=-y$ \`e $y(x)=c_1\cos x+c_2\sin x$.
+\end{itemize}
+\section{Problema di Cauchy}
+$n=1$ $y'=f(x;y)$ su $I$ e poi si impone alla soluzione che $y(x_0)=y_0$ assegnato.\\
+$n=2$ $y''=f(x;y;y')$ su $I$ e poi si impone alla soluzione che $y(x_0)=y_0$ assegnato e $y'(x_0)=y_1$ assegnato.\\
+\subsection{Esistenza locale di un problema di Cauchy}
+$y'=y^2$ e impongo $y(0)=1$ $y(x)=0$ \`e soluzione dell'equazione ma non \`e soluzione del problema di Cauchy: non soddisfa $y(0)=1$, si supponga $y\neq 0$, considerando 
+$\frac{y'}{y^2}=1$, $\int\frac{y'}{y^2}dx=\int 1dx$, ovvero $-y(x)^{-1}=x+c$, $y(x)=\frac{1}{-x+c}$, imponendo $y(0)=1\Rightarrow c=1$. La soluzione del problema di Cauchy 
+risulta $y(x)=\frac{1}{1-x}$ che vale sull'intervallo $I=]-\infty;1[$.
+\section{Metodi risolutivi}
+Per:
+\begin{itemize}
+\item $y'=h(x)g(y)$ sono equazioni differenziali del primo ordine a variabili separabili.
+\item $y'=a(x)y+b(x)$ sono equazioni differenziali del primo ordine a coefficienti variabili.
+\item $y''+ay'+by=f(x)$ sono equazioni differenziali del secondo ordine lineari a coefficienti costanti.
+\end{itemize}
+\subsection{Equazioni differenziali del primo ordine a variabili separabili}
+$y'=h(x)g(y)$ Se $g$ si annulla in un punto allora la funzione costante $y(x)=\bar{y}\;\;\forall x$ \`e soluzione costante, infatti $y'(x)=(\bar{y})'=0$ Sia ora $g(y)\neq 0$ 
+allora posso riscrivere la funzione come $\int\frac{y'(x)}{g(y(x))}dx=\int h(x)dx$. Se $G$ \`e una primitiva di $\frac{1}{g}$ e $H$ \`e una primitiva di $h$ allora $G(y(x))=H(x)
++c$ e se $G$ \`e invertibile
+\begin{equation}
+y(x)=G^{-1}(H(x)+c)
+\end{equation}
+\subsection{Equazioni differenziali del primo ordine a coefficienti costanti}
+$y'(x)=a(x)y(x)+b(x)$ con $a(x)$ e $b(x)$ due funzioni continue assegnate.
+\subsubsection{Osservazioni}
+\begin{itemize}
+\item Se $b(x)\equiv 0$, l'equazione si trasforma in $y'=a(x)y$ a variabili separabili e si dice incompleta, altrimenti si dice completa e l'equazione a variabili associata si 
+dice l'equazione omogenea associata.
+\item  L'integrale generale dell'equazione si ottiene aggiungendo all'integrale dell'equazione omogenea associata una soluzione particolare dell'equazione completa.
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%ADD SPIEGAZIONE DEL METODO RISOLUTIVO%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{equation}
+y(x)=a^{A(x)}(c+\int b(x)e^{-A(x)}dx)
+\end{equation}
+\subsection{Equazioni differenziali del secondo ordine lineari a coefficienti costanti}
+$y''+ay'+by=f(x)$
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%ADD SPIEGAZIONE DEL METODO RISOLUTIVO%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{equation}
+y(x)=c_1y_1(x)+c_2y_2(x)+\bar{y}(x)
+\end{equation}
+
+
+
+
+

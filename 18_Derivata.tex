@@ -1,0 +1,64 @@
+\chapter{La derivata}
+Sapendo la continuit\`a di una funzione in un punto $x_0$ non basta per capire completamente il suo comportamento vicino a $x_0$. Per descrivere come varia $f(x)$ in un intorno
+di $x_0$ non basta la continuit\`a.
+\section{Rapporto incrementale}
+Sia $f:A\subset\mathbb{R}\rightarrow\mathbb{R}$ una funzione. Per determinare come varia la $f$ in $f(x_0)$ si utilizza il rapporto incrementale:
+\begin{equation}
+R{x_0}(x)\dot{=}\frac{f(x)-f(x_0)}{x-x_0}\;\forall x\in I\backslash\{x_0\}
+\end{equation}
+Descritto anche come 
+\begin{equation}
+\frac{f(x_0+h)-f(x_0)}{h}, h\neq0
+\end{equation}
+Se $x\rightarrow x_0$ e $f$ continua allora $R_{x_0}\rightarrow \frac{0}{0}$ e si indaga come si comporta la variazione di $f$, rispetto alla variazione di $x$.
+\section{Definizione di derivata}
+Sia $I\subset\mathbb{R}$ intervallo, $f\rightarrow\mathbb{R},x_0\in I$ punto interno.\\
+La derivata di $f$ in $x_0$ \`e definita se esiste finito o infinito come 
+\begin{equation}
+\lim\limits_{x\rightarrow x_0}\frac{f(x)-f(x_0)}{x-x_0}
+\end{equation}
+Notazione: $\lim\limits_{x\rightarrow x_0}\frac{f(x)-f(x_0)}{x-x_0}\dot{=} f'(x_0)$ o $\dot{f}(x_0)$ o $\frac{d}{dx}f(x_0)$ $=\lim\limits_{h\rightarrow 0}\frac{f(x_0+h)-f(x_0)}{h}
+$
+\subsection{Derivata destra}
+Derivata destra di $f$ in $x_0$: se esiste finito o infinito $\lim\limits_{x\rightarrow x_0^+}\frac{f(x)-f(x_0)}{x-x_0}\dot{=} f_+'(x_0)$
+\subsection{Derivata sinistra}
+Derivata sinistra di $f$ in $x_0$: se esiste finito o infinito $\lim\limits_{x\rightarrow x_0^-}\frac{f(x)-f(x_0)}{x-x_0}\dot{=} f_-'(x_0)$
+\section{Condizioni di derivabilit\`a}
+Si dice che $f$ \`e derivabile in $x_0$ se la derivata $f'(x_0)$ esiste ed \`e finita. Se $f:A\rightarrow\mathbb{R}$ \`e derivabile in $A\subset I$, ovvero se \`e derivabile in ogni punto di $A$ allora si definisce la funzione derivata $f':A\rightarrow\mathbb{R}$ $x\rightarrow f'(x_0)$\\
+Si usa la notazione di derivata anche per indicare anche il caso in cui il limite sia infinito, ma la $f$ non \`e derivabile.
+\section{Propriet\`a della derivata}
+Se $f$ \`e derivabile in $x_0$ allora $f$ \`e continua in $x_0$: se $f$ \`e derivabile esiste ed \`e finito $\lim\limits_{x\rightarrow x_0}R_{x_0}=f'(x_0)\Leftrightarrow 
+R_{x_0}(x)=f'(x_0)+o(1)$ per $x\rightarrow x_0$, $\Leftrightarrow\frac{f(x)-f(x_0)}{x-x_0}=f'(x_0)+o(1)$
+$\Leftrightarrow f(x)=f(x_0)+f'(x_0)(x-x_0)+o(x-x_0)$ per $x\rightarrow x_0$, $\Leftrightarrow \lim\limits_{x\rightarrow x_0}f(x)=f(x_0)$.\\
+Il fatto che una funzione sia continua in $x_0$ non implica che sia derivabile in tal punto.\\
+Se $f$ \`e derivabile in $x_0$, $\Rightarrow f(x)=f(x_0)+f'(x_0)(x-x_0)+o(x-x_0)$ per $x\rightarrow x_0$. Definito $r(x)=f(x_0)+f'(x_0)(x-x_0)$ la funzione affine il cui 
+grafico \`e la retta con quella equazione, ovvero la retta passante per $(x_0;f(x_0))$ con pendenza $f'(x_0)$.
+\section{Interpretazione geometrica della derivata} 
+Considerando una qualunque funzione $f(x)$, con un suo punto generico $P=(x_0;f(x_0))$ e un suo punto fissato $P_0=(x_0;f(x_0))$, l'equazione della retta secante passante per 
+$P$ e $P_0$: $y:f(x_0)+\frac{f(x)-f(x_0)}{x-x_0}(x-x_0)$. Per $x\rightarrow x_0$, $P$ si avvicina al punto $P_0$ lungo il grafico di $f$ e la retta secante va verso una retta
+"limite" se $\frac{f(x)-f(x_0)}{x-x_0}$  ammette limite finito. Tale retta limite ha pendenza $f'(x_0)(=\lim\limits_{x\rightarrow x_0}\frac{f(x)-f(x_0)}{x-x_0})$ e tocca il 
+grafico nel punto $P_0$. Tale retta "limite" viene definita retta tangente al grafico di $f$ nel punto $(x_0;f(x_0))$ e la sua equazione sar\`a: $y=f(x_0)+f'(x_0)(x-x_0)$ se 
+$f$ \`e derivabile in $x_0$. Se $f'(x_0)=\pm\infty$, pertanto $f$ non \`e derivabile $x=x_0$ \`e la retta tangente al grafico di $f$ in $(x_0;f(x_0))$.
+\section{Derivate di alcune funzioni elementari}
+\begin{tabular}{|c|c|}
+\hline
+$f(x)=k$ & $f'(x)=0$\\
+$f(x)=x^\alpha$ & $f'(x)=\alpha x^{\alpha-1}$\\
+$f(x)=e^x$ & $f'(x)=e^x$\\
+$f(x)=a^x$ & $f'(x)=a^x\log a$\\
+$f(x)=\log |x|$ & $f'(x)=\frac{1}{x}$\\
+$f(x)=\log_a |x|$ & $f'(x)=\frac{1}{x\log a}$\\
+$f(x)=\sin x$ & $f'(x)=\cos x$\\
+$f(x)=\cos x$ & $f'(x)=-\sin x$\\
+\hline
+\end{tabular}
+\subsection{Dimostrazioni}
+\subsubsection{$f(x)=x^2\Rightarrow f'(x)=2x,\forall x\in\mathbb{R}$}
+Infatti, $\forall x\in\mathbb{R}$, $\forall h\neq 0$:\\
+$\dfrac{f(x+h)-f(x)}{h}=\dfrac{(x+h)^2-x^2}{h}=\dfrac{2xh+h^2}{h}=2x+h$\\
+$\Rightarrow \lim\limits_{h\rightarrow 0}\dfrac{f(x+h)-f(x)}{h}=\lim\limits_{h\rightarrow 0}(2x+h)=2x$
+\subsubsection{$f(x)=e^x\Rightarrow f'(x)=e^x,\forall x\in\mathbb{R}$}
+Infatti, $\forall x\in\mathbb{R}$, $\forall h\neq 0$:\\
+$\dfrac{f(x+h)-f(x)}{h}=\dfrac{e^{x+h}-e^x}{h}=\dfrac{e^x(e^h-1)}{h}$.\\
+$h\rightarrow 0, \dfrac{(e^h-1)}{h}\rightarrow 1$
+$\Rightarrow \lim\limits_{h\rightarrow 0}\dfrac{f(x+h)-f(x)}{h}=\lim\limits_{h\rightarrow 0}e^x\dfrac{(e^h-1)}{h}=e^x$.

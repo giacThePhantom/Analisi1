@@ -1,0 +1,79 @@
+\chapter{Teoremi fondamentali per la classe delle funzioni derivabili}
+Le funzioni derivabili sono funzioni morbide.
+\section{Primo lemma}
+Sia $f:]a;b[$ funzione derivabile in $x_0\in]a;b[$. Si supponga $f'(x_0)\neq 0$, allora $f(x)-f(x_0)$ cambia segno attraversando $x_0$, ossia se $f'(x_0)>0$, allora 
+$f(x)<f(x_0)$ per $x$ vicino a $x_0$ a sinistra, $f(x)>f(x_0)$ per $x$ vicino a $x_0$ a destra. Analogamente se $f'(x_0)<0$.
+\subsubsection{Dimostrazione}
+Si supponga $f'(x_0)>0$. Allora $\lim\limits_{x\rightarrow x_0}\frac{f(x)-f(x_0)}{x-x_0}>0$. Per il teorema della permanenza del segno si ha che esiste un intorno $U$ di 
+$x_0$ tale che $\frac{f(x)-f(x_0)}{x-x_0}>0\forall x\in U\backslash\{x_0\}\Leftrightarrow f(x)-f(x_0)$ ha lo stesso segno di $x-x_0$, $x\in U\backslash\{x_0\}$, 
+$\Leftrightarrow$
+\begin{itemize}
+\item $f(x)>f(x_0)\;\;\;\;\forall x\in U,\;x>x_0$
+\item $f(x)<f(x_0)\;\;\;\;\forall x\in U,\;x<x_0$
+\end{itemize}
+\section{Teorema di Fermat}
+Usando il lemma dimostrato precedentemente si dimostra questo teorema che garantisce una condizione necessaria affinch\`e un punto interno a $]a;b[$ in cui $f$ \`e derivabile
+risulti essere un punto di minimo o massimo locale per $f$. Un punto $x_0\in ]a;b[$ in cui $f$ \`e derivabile e $f'(x_0)=0$ si chiama punto stazionario o punto critico di $f$
+\subsubsection{Enunciato}
+$f:]a;b[\rightarrow\mathbb{R}$, $x_0\in]a;b[$, se $f$ \`e derivabile in $x_0$ e $x_0$ \`e un punto di minimo o massimo locale per $f$ allora la $f'(x_0)=0$, ovvero $x_0$ deve essere un punto stazionario, condizione non sufficiente, non tutti i punti critici di $f$ sono punti di minimo o massimo locali.
+\subsubsection{Dimostrazione}
+Si supponga che $x_0$ sia un punto di massimo locale. Esiste per definizione un intorno $U$ di $x_0$ tale che $f(x_0)\ge f(x)\forall x\in U\cap]a;b[\Leftrightarrow 
+f(x)-f(x_0)\le 0\forall x\in U\cap]a;b[$, ovvero $f(x)-f(x_0)$ ha segno costante in $U$. Per il lemma precedente non si pu\`o avere $f'(x_0)<0$ o $f'(x_0)>0$, perci\`o 
+$f'(x_0)=0$.
+\subsubsection{Conclusioni}
+Per il teorema di Weierstrass una funzione $f$ pertanto ha massimo e minimo su $[a;b]$ e tali valori vengono assunti agli estremi dell'intervallo, nei punti di non 
+derivabilit\`a o nei punti critici.
+\section{Teorema di Rolle}
+Sia $f:[a;b]\rightarrow\mathbb{R}$ una funzione continua, derivabile in $]a;b[$ e $f(a)=f(b)$ allora $\exists c\in]a;b[:f'(c)=0$. Come per Lagrange possono esserci pi\`u 
+punti che soddisfano queste caratteristiche. Ovvero esiste almeno un punto con tangente orizzontale. 
+\subsubsection{Dimostrazione}
+$f$ \`e continua su un intervallo chiuso e limitato, perci\`o il teorema di Weierstrass garantisce l'esistenza di massimo e minimo nell'intervallo. Se il minimo di $f$ su 
+$[a;b]$ \`e uguale al massimo e coincide con $f(a)=f(b)$ segue che $f$ \`e costante. Perci\`o $f'(c)=0\forall c\in]a;b[$. Supponendo che $\max\limits_{[a;b]} f>f(a)=f(b)$ e 
+analogalmente $\min\limits_{[a;b]} f<f(a)=f(b)$ allora $\exists x_0\in ]a;b[:f(x_0)=\max\limits_{[a;b]} f$. Per il teorema di Fermat si ottiene che $f'(x_0)=0$.
+\subsubsection{Osservazioni}
+Venendo a mancare le condizioni per il teorema di Rolle non \`e possibile garantirne il risultato.
+\section{Teorema del valor medio o di Lagrange}
+Sia $f[a;b]\rightarrow\mathbb{R}$ funzione continua su $[a;b]$ e derivabile su $]a;b[$ Allora esiste almeno un punto $c\in]a;b[$ tale che $\frac{f(b)-f(a)}{b-a}=f'(c)$, 
+ovvero esiste un punto in $]a;b[$ la cui retta tangente \`e parallela alla retta passante per $a$ e $b$. Dal teorema di Lagrange segue il teorema di Rolle.
+\subsubsection{Dimostrazione}
+Si introduce la funzione $h(x)=f(x)-[f(a)+\frac{f(b)-f(a)}{b-a}(x-a)]$, ovvero alla funzione sottraggo la retta passante per i punti $a,b$. $h$ continua su $[a;b]$ e
+derivabile su $]a;b[$ $h(a)=h(b)=0$. A questa funzione posso pertanto applicare il teorema di Rolle: $\exists c\in ]a;b[:h'(c)=0$. $0=f'(c)-\frac{f(b)-f(a)}{b-a}
+\Leftrightarrow f'(c)=\frac{f(b)-f(a)}{b-a}$. 
+\section{Teorema di Cauchy}
+Siano $f,g[a;b]\rightarrow\mathbb{R}$ continue e derivabili in $]a;b[$ allora $\exists c\in ]a;b[:(f(b)-f(a))g'(c)=(g(b)-g(a))f'(c)$
+\subsubsection{Osservazioni}
+Se $g(b)\neq g(a)\wedge g'(c)\neq 0$ allora posso riscrivere l'equazione come:$\dfrac{f(b)-f(a)}{g(b)-g(a)}=\dfrac{f'(c)}{g'(c)}$. Non si ottiene Cauchy direttamente da 
+Lagrange.
+\subsubsection{Dimostrazione}
+Si definisca la funzione $h(x)=[f(b)-f(a)]g(x)-[g(b)g(a)]f(x)$. Si ottiene la funzione $h$ continua su $[a;b]$ e derivabile su $]a;b[$ e $h(a)=h(b)$, pertanto per il teorema
+di Rolle si ha che $\exists c\in ]a;b[:h'(c)=0$, ovvero $(f(b)-f(a))g'(c)=(g(b)-g(a))f'(c)$.
+\subsubsection{Da Cauchy a Lagrange}
+Per dimostrarlo si usi come $g(x)$ la funzione $x$, identit\`a su $[a;b]$
+\section{Conseguenze del teorema di Lagrange}
+$f(x)=k\Rightarrow f'(x)=0$ $\forall x\in[a;b]$, per dimostrare l'implicazione inversa:\\
+\textbf{Teorema}: se $f$ \`e una funzione derivabile su un intervallo $I:f'(x)=0\forall x\in I\Rightarrow f$ costante ni $I$. Per dimostrarlo considero $x_1<x_2\in I$. 
+Applicando Lagrange nell'intervallo $[x_1;x_2\Rightarrow\exists c\in ]x_1;x_2[:\frac{f(x_2)-f(x_1)}{x_2-x_1}=f'(c)=0\Rightarrow f(x_1)=f(x_2)$, per l'arbitrariet\`a di
+$x_1$ e $x_2$ segue che $f$ \`e costante. \`E essenziale che $I$ sia un intervallo. 
+\section{Monotonia e segno della derivata}
+Usando il teorema di Lagrange si prova un legame cruciale tra il segno della derivata e la monotonia in $f$.
+\subsection{Test di monotonia}
+Sia $f:]a;b[\rightarrow\mathbb{R}$ una funzione derivabile.
+\begin{itemize}
+\item $f'(x)\ge 0$ su $]a;b[$ $\Leftrightarrow$ la funzione \`e crescente su $]a;b[$.
+\item $f'(x)> 0$ su $]a;b[$ $\Leftrightarrow$ la funzione \`e strettamente crescente su $]a;b[$.
+\item $f'(x)\le 0$ su $]a;b[$ $\Leftrightarrow$ la funzione \`e decrescente su $]a;b[$.
+\item $f'(x)< 0$ su $]a;b[$ $\Leftrightarrow$ la funzione \`e strettamente decrescente su $]a;b[$.
+\end{itemize}
+\subsubsection{Dimostrazione}
+Si supponga $f'(x)\ge 0$ su $]a;b[$. Considerando $x_1<x_2\in ]a;b[$ basta considerare dal teorema di Lagrange che $\frac{f(x_2)-f(x_1)}{x_2-x_1}=0\;\;f'(c)\ge 0$. Essendo $x_2-
+x_1\ge 0$, allora $f(x_2)-f(x_1)\ge 0\Rightarrow f(x_2)\ge f(x_1)$, ovvero la funzione \`e crescente. La dimostrazione \`e analoga negli altri casi.
+\subsection{Conseguenze}
+Nello studio di funzioni, ovvero nella ricerca di punti di massimo e minimo locali, si \`e visto che la derivabilit\`a di $f$ \`e condizione necessaria affinch\`e $x_0\in I$,
+punto critico ($f'(x_0)=0$) sia un punto di massimo o minimo locale.
+\begin{itemize}
+\item Se la derivata \`e prima negativa e poi positiva, il punto in cui si annulla \`e un punto di minimo locale.
+\item Se la derivata \`e prima positiva e poi negativa, il punto in cui si annulla \`e un punto di massimo locale.
+\item Se la derivata conserva il segno a destra e a sinistra del punto in cui si annulla non \`e n\`e minimo n\`e massimo.
+\end{itemize}
+
+

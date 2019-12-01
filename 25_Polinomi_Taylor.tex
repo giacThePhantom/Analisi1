@@ -1,0 +1,135 @@
+\chapter{Polinomi di Taylor}
+I polinomi di Taylor servono per approssimare una funzione in un intorno di un punto $x_0$ tramite funzioni semplicemente calcolabili: i polinomi.
+\subsubsection{Formula di Taylor con resto di Peano}
+\begin{equation}
+f(x)=P_n(x)+o((x-x_0)^n)\;\;\;\;x\rightarrow x_0
+\end{equation}
+\subsubsection{Formula di Taylor con il resto di Lagrange}
+\begin{equation}
+f(x)=P_n(x)+\text{una valutazione quantitativa dell'errore}\;\;\;\;x\rightarrow x_0
+\end{equation}
+\subsection{Osservazioni}
+Se $f:]a;b[\rightarrow\mathbb{R}, x_0\in]a;b[$.
+\begin{itemize}
+\item Se $f$ \`e continua in $x_0$, allora $f(x)=f(x_0)+o(1)$ per $x\rightarrow x_0$,\\
+$=f^{(0)}(x_0)+o((x-x_0)^0)$ per $x\rightarrow x_0$, ovvero la miglior approssimazione costante di $f(x)$ per $x\rightarrow x_0$ \`e\\
+$P_0(x)\dot{=}f^{(0)}(x_0)\;\forall x$, ovvero $f(x)=P_0(x)+o((x-x_0)^0)$ per $x\rightarrow x_0$.
+\item Se $f$ \`e derivabile in $x_0$ allora $f(x)=f(x_0)+f'(x_0)(x-x_0)+o((x-x_0)$ per $x\rightarrow x_0$, $=f^{(0)}(x_0)+f^{(1)}(x_0)(x-x_0)+o((x-x_0))$, miglior approssimazione 
+affine di $f(x)$ per $x\rightarrow x_0$ \`e\\
+$P_1(x)\dot{=}f^{(0)}(x_0)+f^{(1)}(x_0)(x-x_0)$. $P_1(x)$ \`e un polinomio di grado $\le 1$ se $f^{(1)}(x_0)\neq 0$ \`e centrato in $x_0$.
+\end{itemize}
+\section{Formula di Taylor con resto di Peano}
+Sia $f:]a;b[\rightarrow\mathbb{R}, x_0\in]a;b[$. Supponendo che $f$ sia derivabile $n$ volte in $x_0$ e derivabile $(n-1)$ volte in $]a;b[$. Allora $\forall x\in ]a;b[$,\\
+$f(x)=P_n(x)+o((x-x_0)^n)\;\;\;\;x\rightarrow x_0$\\
+Dove $P_n(x)=f^{(0)}(x_0)+f^{(1)}(x_0)(x-x_0)+\frac{f^{(2)}}{2!}(x_0)(x-x_0)^2+\cdots+\frac{f^{(n)}}{n!}(x_0)(x-x_0)^n$
+\begin{center}
+\begin{equation}
+=\sum\limits_{k=0}^n\dfrac{f^{(k)}(x_0)}{k!}(x-x_0)^k
+\end{equation}
+\end{center}
+$P_n(x)=$ polinomio di Taylor di ordine $n$ (corrispondente al numero di derivate calcolate) associato ad $f$ e centrato in $x_0$. $P_n(x)$ \`e un polinomio di grado $\le n$, e 
+ha grado $n\Leftrightarrow f^{(n)}(x_0)\neq 0$.\\
+Se $x_0=0$ il polinomio di Taylor prende anche il nome di polinomio di Mac Laurin.\\
+Se esiste il polinomio di Taylor di ordine $n$ associato ad $f$ e centrato in $x_0$, \`e unico, si dimostra supponendo:
+\begin{itemize}
+\item $f(x)=P_n(x)+o((x-x_0)^n)$
+\item $f(x)=Q_n(x)+o((x-x_0)^n)$
+\item $\Rightarrow P_n(x)-Q_n(x)=o((x-x_0)^n)$
+\item $P_n(x)=Q_n(x)$
+\end{itemize}
+\subsubsection{Dimostrazione}
+Se $f$ \`e derivabile in $x_0\in ]a;b[$, allora\\
+$f(x)=f(x_0)+f'(x_0)(x-x_0)+o((x-x_0))\;\;\;\;x\rightarrow x_0$, dove\\
+$P_1(x)=f(x_0+f'(x_0)(x-x_0)$. Si vuole indagare $o((x-x_0))$. Si consideri\\
+$h(x)=f(x)-P_1(x)$, perci\`o $\frac{h(x)}{g(x)}=\frac{f(x)-[f(x_0)+f'(x_0)(x-x_0)]}{(x-x_0)^2}$, ovvero se l'infinitesimo sopra \`e di ordine superiore a $(x-x_0)$, $\lim\limits_{x\rightarrow x_0}\frac{h(x)}{g(x)}[\frac{0}{0}]$, si provi a calcolarlo attraverso de l'Hopital. $\frac{h'(x)}{g'(x)}=\frac{f'(x)-f'(x_0)}{2(x-x_0)}\xrightarrow[x\rightarrow x_0]{}\frac{f''(x_0)}{2}$ se $f$ \`e derivabile due volte. Da questo segue, usando de l'Hopital che $\Rightarrow \lim\limits_{x\rightarrow x_0}\frac{h(x)}{g(x)}=\frac{f''(x_0)}{2}\Leftrightarrow f(x)-P_1(x)=\frac{f''(x_0)}{2}(x-x_0)^2+o((x-x_0)^2)\Leftrightarrow$\\
+$f(x)=f(x_0)+f'(x_0)(x-x_0)+\frac{f''(x_0)}{2}((x-x_0)^2)\Rightarrow$\\
+$f(x)=P_2(x)+o((x-x_0)^2)\;\;\; x\rightarrow x_0$. Si procede con $\frac{f(x)-P_2(x)}{(x-x_0)^3}$ e si dimostra attraverso il principio di induzione.
+\section{Polinomi di Taylor delle funzioni elementari centrati in $x_0=0$}
+\subsection{$f(x)=e^x$}
+\begin{itemize}
+\item $f^{(k)}(x)=e^x\;\;\;\;\forall k\ge 0$
+\item $f^{(k)}(0)=1\;\;\;\;\forall k\ge 0$
+\end{itemize}
+\begin{equation}
+P_n(x)=\sum\limits_{k=0}^n\dfrac{1}{k!}x^k
+\end{equation}
+$=1+x+\dfrac{x^2}{2!}+\dfrac{x^3}{3!}+\cdots+\dfrac{x^n}{n!}$
+\subsection{$f(x)=\log (1+x)$}
+\begin{tabular}{c c}
+$f(x)=\log (1+x)$ & $f^{(0)}(0)=0$\\
+$f'(x)=\frac{1}{1+x}$ & $f^{(1)}(0)=1$\\
+$f''(x)=-\frac{1}{(1+x)^2}$ & $f^{(2)}(0)=-1$\\
+$f'''(x)=\frac{2}{(1+x)^3}$ & $f^{(3)}(0)=2$\\
+$f^{(4)}(x)=-\frac{2\cdot3}{(1+x)^4}$ & $f^{(4)}(0)=-3!$\\
+$\cdot$ & $\cdot$\\
+$\cdot$ & $\cdot$\\
+$\cdots$ & $\cdot$\\
+$f^{(k)}(x)=\frac{(-1)^{k-1}(k-1)!}{(1+x)^k}$ & $f^{(k)}(0)=(-1)^{k-1}(k-1)!$\\
+\end{tabular}\\
+$P_n(x)=\sum\limits_{k=1}^n\frac{(-1)^{k-1}(k-1)!}{k(k-1)!}x^k$
+\begin{equation}
+P_n(x)=\sum\limits_{k=1}^n\dfrac{(-1)^{k-1}}{k}x^k
+\end{equation}
+$=x-\frac{x^2}{2}+\frac{x^3}{3}-\frac{x^4}{4}+(-1)^{n-1}\frac{x^n}{n}$
+\subsection{$f(x)=\sin x$}
+\begin{tabular}{c c}
+$f(x)=\sin x$ & $f^{(0)}(0)=0$\\
+$f'(x)=\cos x$ & $f^{(1)}(0)=1$\\
+$f''(x)=-\sin x$ & $f^{(2)}(0)=0$\\
+$f'''(x)=-\cos x$ & $f^{(3)}(0)=-1$\\
+$f^{(4)}(x)=\sin x$ & $f^{(4)}(0)=0$\\
+\end{tabular}\\
+\begin{equation}
+P_{2n+1}(x)=\sum\limits_{k=0}^n\dfrac{(-1)^{k}}{(2k+1)!}x^{2k+1}
+\end{equation}
+$=x-\frac{x^3}{3!}+\frac{x^5}{5!}-\frac{x^7}{7!}+\frac{(-1)^{n}x^{2n+1}}{(2n+1)!}$\\
+$P_{2n+2}=P_{2n+1}\;\;\;\;\forall n\ge 0$
+\subsection{$f(x)=\cos x$}
+\begin{equation}
+P_{2n}(x)=\sum\limits_{k=0}^n\dfrac{(-1)^kx^{2k}}{(2k)!}
+\end{equation}
+$=1-\frac{x^2}{2!}+\frac{x^4}{4!}-\frac{x^6}{6!}+\frac{(-1)^{n}x^{2n}}{(2n)!}$\\
+$P_{2n+1}=P_{2n}\;\;\;\;\forall n\ge 0$
+\subsection{$f(x)=\tan x$}
+\begin{equation}
+P_5(x)=x+\dfrac{x^3}{3}+\dfrac{2}{15}x^5
+\end{equation}
+\subsection{$f(x)=\arctan x$}
+\begin{equation}
+P_{2n+1}=\sum\limits_{k=0}^n\dfrac{(-1)^k}{2k+1}x^{2k+1}
+\end{equation}
+$x-\frac{x^3}{3}+\frac{x^5}{5}-\frac{x^7}{7}+\cdots+\frac{(-1)^nx^{2n+1}}{(2n+1)}$
+\subsection{$f(x)=(1+x)^\alpha$}
+\begin{equation}
+P_n(x)=\sum\limits_{k=0}^n\binom{\alpha}{k}x^k
+\end{equation}
+$=1+\alpha x+\dfrac{\alpha(\alpha-1)}{2!}x^2+\dfrac{\alpha(\alpha-1)(\alpha-2)}{3!}x^3+\cdots+\dfrac{\alpha(\alpha-1)(\alpha-2)\cdots(\alpha-(n-1))}{n!}x^n$
+
+\section{Formula di Taylor con resto di Lagrange}
+Sia $f:]a;b[\rightarrow\mathbb{R},\;x_0\in]a;b[$. Si supponga che $f$ sia derivabile $n+1$ volte nell'intervallo $]a;b[$. Allora sia $P_n(x)$ il polinomio di Taylor associato ad
+$f$ di ordine $n$ e centrato in $x_0$, allora $\forall x\in ]a;b[$
+\begin{equation}
+f(x)=P_n(x)+\frac{f^{(n+1)}(c_x)}{(n+1)!}(x-x_0)^{n+1})
+\end{equation}
+Dove $c_x$ \` un punto opportuno tra $x$ e $x_0$. 
+\subsubsection{Osservazione}
+Il teorema di Lagrange o del valor medio dimostrato precedentemente dimostra che $\exists c_x\in [x;x_0[:\;\;f'(c_x)=\frac{f(x_0)-f(x)}{x_0-x}\Rightarrow f(x_0)-f(x)=f'(c_x)(x_0-
+x)\Rightarrow f(x)=f(x_0)+f'(c_x)(x-x_0)$ che \` il caso $0$ della formula di Taylor sopra scritta sull'intervallo $[x;x_0]\lor [x_0;x]$.
+\subsection{Applicazioni}
+Si usi il teorema sopra per ottenere stime, approssimazioni in quanto si pu\`o scrivere $f(x)=P_n(x)+\frac{f^{(n+1)}(c_x)}{(n+1)!}(x-x_0)^{n+1})$.
+\subsubsection{Esempi}
+\begin{itemize}
+\item Si provi che $\cos x>1-\frac{x^2}{2}, \forall x\neq 0$. Basta dimostrare per $x$ positivi in quanto le due funzioni sono pari. Per $x>2$ \`e ovvia in quanto $1-\frac{x^2}
+{2},-1\le\cos x \forall x>2$. Si usi la formula di Taylor con resto di Lagrange per $n=2$, $x_0=0$, $f(x)=\cos x$: $\cos x=1-\frac{x^2}{2}+\frac{\sin(c_x)}{3!}(x^3)$, dove $c_x$
+\`e un punto tra $]0;x[$, $\Rightarrow \cos x>1-\frac{x^2}{2}\;\forall x\in ]0;2]$, perci\`o $\sin(c_x)>0$.
+\item Si provi che $e=\lim\limits_{n\rightarrow+\infty}\sum\limits_{k=0}^n\frac{1}{k!}=\sum\limits_{k=0}^\infty\frac{1}{k!}$. Si consideri lo sviluppo di Taylor di $e^x$ 
+centrato in $x_0=0$ con resto di Lagrange: $e^x\sum\limits_{k=0}^n\frac{x^k}{k1}+\frac{e^{c_x}]}{(n+1)!}x^{n+1}$, dove $c_x$ \`e un punto opportuno tra $o$ e $c$ ($\forall x\in
+\mathbb{R}$). Si consideri $x=1$, $e^x\sum\limits_{k=0}^n\frac{1}{k!}+\frac{e^{c_x1}]}{(n+1)!}x^{n+1}$, $e-\sum\limits_{k=0}^n\frac{1}{k!}\le \frac{e}{(n+1)!}\;\;\;\;\;\;(n+1)!
+\xrightarrow[n\rightarrow+\infty]{}0$
+\end{itemize}
+\subsubsection{Stima di $e$}
+Applicando la formula di Taylor con il resto di Lagrange si trova che $|e^x-\sum\limits_{k=0}^n\frac{x^k}{k!}\le \frac{e^{c_x}}{(n+1)!}|x|^{n+1}\le \frac{\max\{1;e^x\}}{(n+1)!}|x|^{n+1}
+$, dove $\frac{|x|^{n+1}}{(n+1)!}\xrightarrow[x\rightarrow+\infty]{}0$, perci\`o:
+\begin{equation}
+e^x=\sum\limits_{k=0}^\infty \dfrac{x^k}{k!}\;\;\;\;\forall x\in\mathbb{R}
+\end{equation}

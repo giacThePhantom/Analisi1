@@ -1,0 +1,38 @@
+\chapter{Convessit\`a e concavit\`a}
+\section{Derivate successive}
+Sia $f:domf\rightarrow\mathbb{R}$ una funzione derivabile su $domf'\subseteq domf$ si ha $f':domf'\rightarrow\mathbb{R}$. Se $f'$ \`e derivabile, in $domf''\subseteq domf$, si 
+pu\`o definire la funzione derivata seconda di $f$, indicata con $f''(x)\dot{=}(f')'(x)$, $f'':domf''\rightarrow\mathbb{R}$. \`E possibile continuare per derivata terza, quarta, 
+ecc...Si pu\`o usare anche la notazione $f^{(2)}$.
+\section{Funzione convessa o concava}
+\subsection{Funzione convessa}
+\begin{itemize}
+\item Una funzione strettamente convessa \`e una funzione $f$ tale che $\forall (x_1;f(x_1)),(x_2;f(x_2))$, il grafico congiungente $f(x_1)\text{ e }f(x_2)$ sta sopra al grafico della funzione.
+\item Una funzione convessa \`e una funzione $f$ tale che $\forall (x_1;f(x_1)),(x_2;f(x_2))$, il grafico congiungente $f(x_1)\text{ e }f(x_2)$ sta sopra o coincide al grafico della funzione.
+\end{itemize}
+\subsection{Funzione concava}
+Una funzione \`e 
+\begin{itemize}
+\item strettamente concava se $-f$ \`e strettamente convessa.
+\item \`e concava se $-f$ \`e convessa.
+\end{itemize}
+\subsection{Definizione}
+Sia $I$ un intervallo di $\mathbb{R}$, $f:I\rightarrow\mathbb{R}$ si dice convessa (strettamente) in $I$ se $f(x)\le(<) f(x_1)+\frac{f(x_2)-f(x_1)}{x_2-x_1}(x-x_1)\forall x_1,x_2\in 
+I\;x_1<x<x_2$.
+\subsection{Teorema 1}
+Se $f$ \`e derivabile su $]a;b[$ allora le seguenti affermazioni sono equivalenti:
+\begin{itemize}
+\item $f$ \`e strettamente convessa in $]a;b[$.
+\item $f'$ \`e strettamente crescente in $]a;b[$.
+\item $\forall x_0\in]a;b[$, $f(x)\ge f(x_0)+f'(x_0)(x-x_0)\;\forall x\in ]a;b[$
+\end{itemize}
+\subsection{Teorema 2}
+Sia $f$ derivabile due volte in $]a;b[$
+\begin{itemize}
+\item $f$\`e convessa su $]a;b[\Leftrightarrow f''(x)\ge 0$ su $]a;b[$.
+\item $f''(x)>0$ su $]a;b[\Rightarrow f$ \`e strettamente convessa su $]a;b[$. Non vale l'implicazione inversa.
+\end{itemize}
+\subsection{Definizione}
+$f:]a;b[\rightarrow\mathbb{R},\; x_0\in ]a;b[$ punto di derivabilit\`a di $f$ oppure $f'(x_0)=\pm\infty$. Il punto $x_0$ si dice punto di flesso per $f$ se esiste un intorno 
+destro di $x_0$ in cui $f$ \`e convessa (o concava) e esiste un intorno sinistro di $x_0$ in cui $f$ \`e concava (o convessa).
+\subsection{Teorema 3}
+$f:]a;b[\rightarrow\mathbb{R},\; x_0\in ]a;b[$ un punto di flesso per $f$. Se $f$ \`e derivabile due volte in $x_0$, allora $f''(x_0)=0$, non \`e vera l'implicazione inversa.

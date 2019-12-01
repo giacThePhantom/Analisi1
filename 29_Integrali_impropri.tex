@@ -1,0 +1,77 @@
+\chapter{Integrali generalizzati}
+Si utilizzano per estedere il concetto di integrale a funzioni illimitate su un intorno di un punto o a funzioni limitate su un intervallo illimitato.
+\section{Integrazione per funzioni illimitate}
+Sia $f:[a;b[\rightarrow\mathbb{R}$ una funzione continua e $\lim\limits_{x\rightarrow b^-}=\pm\infty$. Si consideri $\forall\epsilon>0$ piccolo $\int_a^{b-\epsilon}f(x)dx$, che ha 
+senso come funzione Riemann-integrabile su $[a;b-\epsilon]$ e si ponga:
+\begin{equation}
+\int_a^bf(x)dx\dot{=}\lim\limits_{\epsilon\rightarrow0^+}\int_a^{b-\epsilon}f(x)dx
+\end{equation}
+\begin{itemize}
+\item Se tale limite esiste finito allora $f$ si dice integrabile in senso generalizzato (o improprio) su $[a;b[$, oppure che $\int_a^bf(x)dx$ \`e convergente
+\item Se tale limite esiste infinito allora l'integrale improprio diverge positivamente o negativamente.
+\item Se tale limite si dice che l'integrale non ha senso o $\nexists$.
+\end{itemize}
+Allo stesso modo si definisce per $f:]a;b]\rightarrow\mathbb{R}$ con $\lim\limits_{x\rightarrow a^+}f(x)=\pm\infty$
+\begin{equation}
+\int_a^bf(x)dx\dot{=}\lim\limits_{\epsilon\rightarrow0^+}\int_{a+\epsilon}^bf(x)dx
+\end{equation}
+\section{Integrazioni per intervalli illimitati}
+Sia $f:[a;+\infty[\rightarrow\mathbb{R}$ una funzione continua. Perci\`o $\forall M>a$ \`e ben definito $\int_a^Mf(x)dx$. Si ponga:
+\begin{equation}
+\int_a^{+\infty}f(x)dx\dot{=}\lim\limits_{M\rightarrow+\infty}\int_a^Mf(x)dx
+\end{equation}
+\begin{itemize}
+\item Se tale limite esiste finito allora $f$ si dice integrabile in senso generalizzato (o improprio) su $[a;+infty[$, oppure che $\int_a^{+\infty}f(x)dx$ \`e convergente.
+\item Se tale limite esiste infinito allora l'integrale improprio diverge positivamente o negativamente.
+\item Se tale limite si dice che l'integrale non ha senso o $\nexists$.
+\end{itemize}
+Allo stesso modo si definisce per $f:]-\infty;b]\rightarrow\mathbb{R}$ con $\lim\limits_{x\rightarrow a^+}f(x)=\pm\infty$
+\begin{equation}
+\int_a^bf(x)dx\dot{=}\lim\limits_{\epsilon\rightarrow0^+}\int_{a+\epsilon}^bf(x)dx
+\end{equation}
+\section{Integrali impropri notevoli}
+\begin{multicols}{2}
+\begin{itemize}
+\item $\int_0^1\dfrac{1}{x}dx=+\infty$
+\item $\int_0^1\dfrac{1}{x^\alpha}dx<+\infty\Leftrightarrow\alpha<1$
+\item $\int_1^{+\infty}\dfrac{1}{x}dx=+\infty$
+\item $\int_1^{+\infty}\dfrac{1}{x^\alpha}dx=+\infty\Leftrightarrow\alpha>1$
+\end{itemize}
+\end{multicols}
+\section{Integrale di sottointervalli di una funzione}
+Sia $f:]a;b[\rightarrow\mathbb{R}$ continua con $a\in\mathbb{R}\cap\{-\infty\}$ o $b\in\mathbb{R}\cap\{+\infty\}$. Scelto un qualunque punto $c\in]a;b[$ sar\`a $f$ integrabile in 
+senso generalizzato su $]a;b[$ se $f$ \`e integrabile su $]a;c]$ e $[c;b[$ in senso generalizzato:
+\begin{equation}
+\int_a^cf(x)dx=\int_a^cf(x)dx+\int_c^bf(x)dx
+\end{equation}
+Se entrambi divergono con stesso segno o diverge solo uno la somma \`e divergente,se divergono con segno opposto la somma non ha senso.
+\section{Criteri di convergenza}
+\subsection{Criterio del confronto}
+Si suppongano $f,g:[a;b[\rightarrow\mathbb{R}$ continue e $\lim\limits_{x\rightarrow b^-}f(x)=+\infty$ e $\lim\limits_{x\rightarrow b^-}g(x)=+\infty$. Se $0\le f(x)\le g(x)$ in 
+un intorno sinistro di $b$, analogamente per $f:]a;b]\rightarrow\mathbb{R}$ per il limite a destra di $a$ o su intervallo illimitato allora:
+\begin{itemize}
+\item $\int_a^bg(x)dx<+\infty\rightarrow\int_a^bf(x)dx<+\infty$.
+\item $\int_a^bf(x)dx=+\infty\rightarrow\int_a^bg(x)dx=+\infty$.
+\end{itemize}
+\subsection{Criterio del confronto asintotico}
+Siano $f,g:[a;b[\rightarrow\mathbb{R}$ continue, $\lim\limits_{x\rightarrow b^-}f(x)=+\infty$ e $\lim\limits_{x\rightarrow b^-}g(x)=+\infty$. Siano $f(x)>0$ e $g(x)>0$ in un 
+intorno sinistro di $b$ tali che $\lim\limits_{x\rightarrow b^-}\frac{f(x)}{g(x)}=l\in]0;+\infty$ allora $f$ \`e integrabile in senso improprio su $[a;b[\Leftrightarrow$ lo \`e 
+$g$. Analogamente  per $f:]a;b]\rightarrow\mathbb{R}$ per il limite a destra di $a$ o su intervallo illimitato.
+\section{Funzioni assolutamente integrabili}
+Sia $f:[a;b[\rightarrow\mathbb{R}$ continua, $\lim\limits_{x\rightarrow b^-}f(x)=+\infty$. Diremo che $f$ \`e assolutamente integrabile in senso improprio su $[a;b[$ se $
+\int_a^b|f(x)|dx<+\infty$, analogamente per gli altri casi, se $f$ \`e assolutamente integrabile allora \`e integrabile.
+\section{Serie e integrali generalizzati}
+\subsection{Criterio dell'integrale}
+Sia $f:[0;+\infty[\rightarrow[0;+\infty[$ una funzione decrescente. Si ponga $a_n=f(n)$. Allora:
+\begin{equation}
+\sum\limits_{n=0}^{+\infty}a_n<+\infty\Leftrightarrow\int_0^{+\infty}f(x)dx<+\infty
+\end{equation}
+Inoltre $\sum\limits_{n=1}^{+\infty}a_n\le \int_0^{+\infty}f(x)dx\le \sum\limits_{n=0}^{+\infty}a_n$. Questo criterio vale anche su $[M;=\infty],M>0\in\mathbb{N}$ sostituendo 
+$n=0$ e $n=1$ con $n=M$ e $n=M+1$ rispettivamente.
+\subsubsection{Dimostrazione}
+$\sum\limits_{n=1}^\infty a_n$ somma delle aree minori del grafico di $f$ divise per $n$, mentre $\sum\limits_{n=0}^\infty a_n$ somma delle aree maggiori0 del grafico di $f$ 
+divise per $n$ perci\`o $\sum\limits_{n=1}^\infty a_n\le\int_0^{+\infty}f(x)dx\le \sum\limits_{n=0}^\infty a_n$
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%UP DONE%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Convergenza della funzione gaussiana: $\mathbf{f(x)=e^{-x^2}}$}
+$\int_{-\infty}^{+\infty}e^{-x^2}dx<+\infty$. Si pu\`o osservare che $0<\int_0^{+\infty}e^{-x^2}dx\le \int_0^1e^{-x^2}dx\le\int_1^{+\infty}e^{-x}dx$. Si osservi che $\int_1^{+
+\infty}e^{-x}dx$%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%FINIRE ASSOLUTAMENTE%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

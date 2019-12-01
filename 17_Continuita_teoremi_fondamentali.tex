@@ -1,0 +1,97 @@
+\chapter{Continuit\`a e teoremi fondamentali}
+\section{Punti di discontinuit\`a}
+\begin{itemize}
+\item $\exists\lim\limits_{x\rightarrow x_0}f(x)\neq f(x_0)$
+\item $\exists\lim\limits_{x\rightarrow x_0^-}f(x)=f(x_0)\neq\lim\limits_{x\rightarrow x_0^+}f(x)$
+\item $\exists\lim\limits_{x\rightarrow x_0^-}f(x)\neq f(x_0)\neq\lim\limits_{x\rightarrow x_0^+}f(x)$
+\item $\exists\lim\limits_{x\rightarrow x_0^+}f(x)=f(x_0)\neq\lim\limits_{x\rightarrow x_0^-}f(x)=\infty$
+\item $\exists\lim\limits_{x\rightarrow x_0^-}f(x)=f(x_0),\nexists\lim\limits_{x\rightarrow x_0^+}f(x)$
+\end{itemize}
+\section{Teorema della permanenza del segno}
+Si deduce dal teorema della permanenza del segno per il limite: sia $f:domf\subset\mathbb{R}\rightarrow\mathbb{R}$ continua in $x_0\in domf$ e $f(x_0)>0$, analogo se 
+negativo. Allora $\exists$ un intorno $U$ di $x_0$: $f(x)>0\forall x\in U\cap domf$.
+\section{Teorema di esistenza degli zeri}
+Un punto $x_0\in domf$ si dice uno zero di $f$ se $f(x_0)=0$. Il seguente teorema d\`a condizioni sufficienti affinch\`e $f$ abbia uno zero. La dimostrazione si basa sul 
+metodo di bisezione.\\
+Sia $f:[a;b]\rightarrow\mathbb{R}$, $f$ continua e $f(a)f(b)<0$, allora $\exists x_0\in]a,b[:f(x_0)=0$.\\
+Se $f$ \`e strettamente monotona, allora $x_0$ \`e unico.
+\subsection{Osservazioni}
+\begin{itemize}
+\item Togliendo una delle ipotesi l'esistenza non \`e garantita: se non \`e continua e con segni opposti lo zero potrebbe non esistere (funzione a tratti).
+\item Pu\`o esistere uno zero per $f$ anche se manca una delle ipotesi, ma non \`e certo: $x^2$ tra $[-1;1]$.
+\end{itemize}
+\subsection{Dimostrazione}
+Non \`e restrittivo considerare $f(a)<0$ e $f(b)>0$. Utilizzo il metodo di bisezione: ponendo $a_0=a$ e $b_0=b$, considero il loro punto medio $c_0=\frac{a_0+b_0}{2}$.
+\begin{itemize}
+\item Se $f(c_0)=0$ ho trovato lo zero della funzione.
+\item Se $f(c_0)<0$ si pone $a_1=c_0$ e $b_1=b_0$.
+\item Se $f(c_0)>0$ si pone $a_1=a_0$ e $b_1=c_0$.
+\end{itemize}
+In ogni caso $f(a_1)<0$ e $f(b_1)>0$ e $b_1-a_1=\frac{b-a}{2}$.\\
+Ripetendo il ragionamento si consideri il punto medio di $[a_1;b_1]$, cio\`e $c_1=\frac{b_1+a_1}{2}$.
+\begin{itemize}
+\item Se $f(c_1)=0$ ho trovato lo zero della funzione.
+\item Se $f(c_1)<0$ si pone $a_2=c_0$ e $b_2=b_1$.
+\item Se $f(c_1)>0$ si pone $a_2=a_1$ e $b_2=c_1$.
+\end{itemize}
+In ogni caso $f(a_2)<0$ e $f(b_2)>0$ e $b_2-a_2=\frac{b-a}{2^2}$.\\
+In questo modo $\forall n\ge 0$:\\
+\begin{equation}
+a\le a_1\le a_2\le\cdots\le a_n<b_n\le\cdots\le b_2\le b_1\le b
+\end{equation}
+Si trovano perci\`o due successioni$\{a_n\}$ crescente e $\{b_n\}$ decrescente.$\Rightarrow$
+\begin{center}
+$a_n\xrightarrow[n\rightarrow +\infty]{}x_0$\\
+$b_n\xrightarrow[n\rightarrow +\infty]{}x_1$
+\end{center}
+Poich\`e $b_n-a_n=\frac{b-a}{2^n}$ e siccome per $n\rightarrow+\infty,\frac{b-a}{2^n}=0$ e $b_n\xrightarrow[n\rightarrow+\infty]{} x_1$ e 
+$a_n\xrightarrow[n\rightarrow+\infty]{}x_0$, allora $x_1-x_0=0\Rightarrow x_1=x_0$\\
+Basta provare che $f(x_0)=0$: $f(a_n)<0$ per il teorema ponte $f(a_n)\xrightarrow[n\rightarrow+\infty]{} f(x_0)\le 0$,\\
+$f(b_n)>0$, per il teorema ponte $f(b_n)\xrightarrow[n\rightarrow+\infty]{}f(x_1)\ge 0$.
+Ovvero $0\le f(x_0)\le 0$, da cui $f(x_0)=0$.
+\subsection{Corollario 1}
+Siano $f, g:[a;b]\rightarrow\mathbb{R}$ due funzioni continue, $f,g$, se $f(a)>g(x)$ e $f(b)<g(b)$ o viceversa, allora $\exists x_0\in]a;b[:f(x_0)=g(x_0)$.
+\subsubsection{Dimostrazione}
+Si ponga $h(x)\dot{=}f(x)-g(x)$ su $[a;b]$
+\begin{itemize}
+\item $h$ \`e continua su [a;b]
+\item $h(a)=f(a)-g(a)>0$.
+\item $h(b)=f(b)-g(b)<0$.
+\end{itemize}
+Il teorema di esistenza degli zeri ci garantisce che $\exists x_0\in ]a;b[:h(x_0)=0$, ossia $f(x_0)-g(x_0)=0\Rightarrow f(x_0)=g(x_0)$
+\subsection{Corollario 2, teorema dei valori intermedi}
+Sia $I$ intervallo $\subset\mathbb{R}$. Sia $f:I\rightarrow\mathbb{R}$ continua. Allora esistono $\inf\limits_I f$, $\sup\limits_I f$ e la funzione assume tutti i valori 
+tra il limite inferiore e il limite superiore.
+\subsubsection{Dimostrazione}
+Se $\inf\limits_I f=\sup\limits_I f$ la funzione \`e costante e la tesi \`e ovvia. Altrimenti sia $\inf\limits_I f<y<\sup\limits_I f$ e proviamo che esiste $x\in I:y=f(x)$.\\
+Per la definizione di $\inf\limits_I f,\exists a\in I:f(a)<y$ e per definizione di $\sup\limits_I f, \exists b\in I:y<f(b)$.\\
+Perci\`o $f(a)<y<f(b)$. Si definisca la funzione $g(x)=y\;\forall x\in I$. Pertanto $f(a)<g(a)<y<g(b)<f(b)$.\\
+Per il corollario precedente $\exists x\in I:f(x)=g(x)=y$.
+\subsection{Corollario 3}
+Considero $I$ intervallo $\subset\mathbb{R},f:I\rightarrow\mathbb{R}$ continua, allora $f(I)$ \`e un intervallo tra $\inf\limits_I f$ e $\sup\limits_I f$.
+\section{Legame tra monotonia, iniettivit\`a, continuit\`a di $f$ su un intervallo}
+\begin{itemize}
+\item $f:domf\subset\mathbb{R}\rightarrow\mathbb{R}$, se la funzione \`e strettamente monotona la funzione \`e iniettiva.
+\item L'iniettivit\`a non implica necessariamente la stretta monotonia.
+\item La funzione inversa $f^{-1}:f(A)\rightarrow A$ di una funzione iniettiva, suriettiva e continua $f:A\subset\mathbb{R}\rightarrow f(A)$ risulta continua se il suo 
+insieme immagine \`e un intervallo.
+\end{itemize}
+\subsection{Iniettivit\`a implica la monotonia}
+L'iniettivit\`a di una funzione ne implica la monotonia se $f$ \`e continua: $f:I\subset\mathbb{R}\rightarrow\mathbb{R}$, con $I$ intervallo e $f$ continua e iniettiva, \\
+allora $f$ \`e strettamente monotona in $I$.
+\subsubsection{Dimostrazione}
+Si procede per assurdo: si supponga che la funzione non sia strettamente monotona, pertanto $\exists x<y<z\in I:f(y)>f(x)>f(z)$. Per il teorema dei valori intermedi applicato
+su $[y;z]\Rightarrow\exists\bar{x}\in[y;z]:f(x)=f(\bar{x})$, che contraddice il fatto che $f$ sia iniettiva. Ho raggiunto un assurdo, pertanto il teorema \`e dimostrato.
+\section{Teorema di Weierstrass}
+Esiste sempre $\inf\limits_A f$ e $\sup\limits_A f$, ma non esistono sempre il minimo e il massimo. Questo teorema stabilisce le condizioni sufficienti per l'esistenza del 
+minimo e del massimo.
+\subsection{Enunciato}
+$f:[a;b]\rightarrow\mathbb{R}$ continua allora esistono $m=\min\limits_{[a;b]} f$ e $M=\max\limits_{[a;b]} f$ e $f([a;b])=[m;M]$. Se una delle ipotesi non \`e vera tale 
+esistenza non \`e garantita. 
+\subsection{Conclusioni}
+Il teorema di Weierstrass garantisce l'esistenza di minimo e massimo su un intervallo chiuso e limitato. I punti di massimo e minimo si troveranno:
+\begin{itemize}
+\item Negli estremi dell'intervallo.
+\item Nei punti interni all'intervallo con derivata prima uguale a zero.
+\item Nei punti interni all'intervallo dove non si ha la derivabilit\`a di $f$.
+\end{itemize}

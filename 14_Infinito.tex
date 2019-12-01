@@ -1,0 +1,64 @@
+\chapter{Infinito}
+Una funzione $f:X\rightarrow \mathbb{R}, x_0\in\bar{\mathbb{R}}$ punto di accumulazione. Se $\lim\limits_{x\rightarrow x_0}f(x)=\pm\infty$ si dice divergente positivamente o 
+negativamente.
+\section{Confronto di infiniti}
+Dette $f,g,x_0\in\bar{\mathbb{R}}$ punto di accumulazione. Se f e g sono entrambe infinite e $\lim\limits_{x\rightarrow x_0}\frac{f(x)}{g(x)}=0$ f \`e un infinito di ordine 
+inferiore rispetto a g. Se invece $\lim\limits_{x\rightarrow x_0}\frac{f(x)}{g(x)}=l, l\in\bar{\mathbb{R}}\backslash 0$, f e g sono infiniti dello stesso ordine, in 
+particolare, se $l=1$ allora si usa la notazione $f\sim g$ e si dice che f \`e asintotico a g per x che tende a $x_0$. Se invece $\lim\limits_{x\rightarrow x_0}\frac{f(x)}
+{g(x)}=\infty$ allora si dice che f \`e un infinito di un ordine superiore rispetto a g. Se il limite non esiste allora si dicono non confrontabili.   
+\section{Infinitesimi}
+$f(x)\rightarrow l $ per $x\rightarrow x_0\Leftrightarrow f(x)-l=o(1)$. Quando indico con o(1) l'infinitesimo, ovvero un valore pi\`u piccolo vicino a 0.
+\subsection{Regole di calcolo per o(1)}
+\begin{itemize}
+\item $ko(1)=o(1),\forall k\in\mathbb{R}$
+\item $o(1)o(1)=o(1)$
+\item $o(1)+o(1)=o(1)$
+\item $o(1)-o(1)=o(1)$
+\end{itemize}
+\section{Confronto di infinitesimi}
+Dette $f,g,x_0\in\bar{\mathbb{R}}$ punto di accumulazione. Se f e g sono entrambe infinitesime e $g(x)\neq $ e $\lim\limits_{x\rightarrow x_0}\frac{f(x)}{g(x)}=0$ si dice 
+che f \`e  un infinitesimo di ordine superiore g, se vale $\infty$ \`e di ordine inferiore.  $\lim\limits_{x\rightarrow x_0}\frac{f(x)}{g(x)}=l$ sono dello stesso ordine e 
+se $l=1$ f e g sono asintotiche. Se non esistono i limiti i due non sono confrontabili.
+\section{Definizione}
+Date due funzioni $f$ e $g$, $x_0\in\mathbb{\bar{R}}$ punto di accumulazione per $domf\cap domg$ e $g(x)\neq 0$, $f(x)=o(g(x))$ per $x\rightarrow x_0$ se $\lim\limits_{x
+\rightarrow x_0}\frac{f(x)}{g(x)}=0$.
+\subsection{Osservazioni}
+\begin{itemize}
+\item Se $f$ e $g$ sono entrambe infinite per $x\rightarrow x_0$ allora $f(x)=o(g(x))$ $f$ \`e un infinito di ordine inferiore rispetto a $g$.
+\item Se $f$ e $g$ sono entrambe infinitesime per $x\rightarrow x_0$ allora $f(x)=o(g(x))$ $f$ \`e un infinitesimo di ordine superiore rispetto a $g$.
+\end{itemize}
+\section{regole di calcolo degli $o(x^\alpha)$}
+Siano $\alpha,\beta>0\in\mathbb{R}$.
+\begin{itemize}
+\item $ko(x^\alpha)=o(x^\alpha)$ ($\frac{kf(x)}{x^\alpha}=k\frac{f(x)}{x^\alpha}$)
+\item $x^\beta o(x^\alpha)=o(x^{\alpha+\beta})$ ($f(x)=o(x^\alpha)\,\frac{x^\beta f(x)}{x^{\alpha+\beta}}\:x^\beta f(x)=o(x^{\alpha+\beta})$)
+\item $o(x^\alpha)\cdot o(x^\beta)=o(x^{\alpha+\beta})$ ($f(x)=o(x^\alpha), g(x)=o(x^\beta)\:\frac{f(x)g(x)}{x^{\alpha+\beta}}$)
+\item $o(o(x^\alpha))=o(x^\alpha)$
+\item $o(x^\alpha)\pm o(x^\beta)=o(x^\alpha)$ se $\alpha<\beta$ ($\frac{f(x)+g(x)}{x^\beta}=\frac{f(x)}{x^\alpha}+\frac{g(x)}{x^\alpha}\frac{x^\beta}{x^\beta}$)
+\item $o(x^\alpha)\pm o(x^\beta)=o(x^\beta)$ se $\beta<\alpha$
+\item $o(x^\alpha\pm x^{\alpha+\beta})=o(x^\alpha)$
+\end{itemize}
+\section{Linguaggio degli "o-piccoli" nel calcolo dei limiti}
+Per $x\rightarrow 0 $, $\sin x= x-\frac{x^3}{3!}+o(x^3)$.
+\section{Ordine di infinitesimo e di infinito}
+$f,g$ funzioni infinitesime per $x\rightarrow x_0$, $g(x)\neq 0$ in un intorno di $x_0$ se $\exists\alpha>0, l\in\mathbb{R}\backslash\{0\}:\lim\limits_{x\rightarrow x_0}
+\frac{f(x)}{|g(x)|^\alpha}=l$ allora $f$ \`e di ordine $\alpha$ rispetto all'infinitesimo campione $g(x)$ , per $x\rightarrow x_0$.\\ 
+\begin{tabular}{|c c|c c|}
+\hline
+\multicolumn{2}{|c|}{$f$ infinitesimo} & \multicolumn{2}{c|}{$f$ infinito}\\
+\hline
+$x_0=0$&$g(x)=x$& $x_0=0$ & $g(x)=\frac{1}{x}$\\
+$x_0\neq 0$&$g(x)=x-x_0$& $x_0\neq 0$ & $g(x)=\frac{1}{x-x_0}$\\
+$x_0=\pm\infty$&$g(x)=\frac{1}{x}$& $x_0=\pm\infty$ & $g(x)=x$\\
+\hline
+\end{tabular}
+\subsection{Definizione}
+Se $f$ \`e un infinitesimo di ordine $d$ rispetto all'infinitesimo campione $x$ per $x\rightarrow 0^+$ si scrive che
+\begin{equation}
+f(x)=lx^\alpha+o(x^\alpha)\;x\rightarrow 0^+
+\end{equation}
+Dove $\lim\limits_{x\rightarrow 0^+}\frac{f(x)}{x^\alpha}=l\in\mathbb{R}\backslash\{0\}$, e $\alpha$ si dice ordine di infinitesimo e $lx^\alpha$ si dice parte principale
+di infinitesimo. Pi\`u in generale:
+\begin{equation}
+f(x)=l(x-x_0)^\alpha+o((x-x_0)^\alpha)\;x\rightarrow x_0^+\in\mathbb{R}
+\end{equation} 

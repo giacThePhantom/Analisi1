@@ -1,0 +1,19 @@
+\chapter{Teorema ponte}
+Lega il limite di funzioni con il limite di successioni. Sia $f:\mathbb{X}\rightarrow\mathbb{R}, x_0$ punto di accumulazione per $\mathbb{X}$ allora $\lim\limits_{x
+\rightarrow x_0}f(x)=l\in\mathbb{\bar{R}}\Leftrightarrow\forall$ successione $\{x_n\}_n$ a valori in $\mathbb{X}\backslash\{x_0\}$, $x_n\rightarrow x_0$, 
+\begin{equation}
+\lim\limits_{x\rightarrow x_0}f(x_n)=l
+\end{equation}
+\section{Dimostrare che un limite non esiste}
+\subsubsection{Esempio}
+$\lim\limits_{x\rightarrow\infty}\sin x \:\nexists$. Basta prendere:\\
+$x_n=\frac{\pi}{2}+2n\pi\xrightarrow[n\rightarrow+\infty]{}=+\infty$,\\
+$\tilde{x_n}=\frac{3\pi}{2}+2n\pi\xrightarrow[n\rightarrow+\infty]{}=+\infty$. Da questi ottengo:\\ 
+$f(x_n)=\sin x_n=1\xrightarrow[n\rightarrow \infty]{}1$\\
+$f(\tilde{x_n})=\sin \tilde{x_n}=-1\xrightarrow[n\rightarrow \infty]{}-1$\\
+Perci\`o essendo $f(x_n)\neq f(\tilde{x_n})$ il limite non esiste.
+\section{Trovare il valore del limite quando esiste}
+\subsection{Esempio}
+$\lim\limits_{x\rightarrow+\infty}\log x$, il logaritmo \`e crescente, pertanto il limite esiste. Prendo come $x_n=e^n\xrightarrow[n\rightarrow+\infty]{}+\infty$,\\
+$\log x_n=\log e^n=n\log e=n\Rightarrow\lim\limits_{n\rightarrow+\infty}\log x_n=\lim\limits_{n\rightarrow+\infty} n=+\infty$, pertanto per il teorema ponte segue che 
+$\lim\limits_{x\rightarrow+\infty}\log x=+\infty$

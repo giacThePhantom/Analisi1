@@ -1,0 +1,28 @@
+\chapter{Forme indeterminate e teorema di de l'Hopital}
+Si possono studiare limiti della forma $\frac{0}{0}$ e $\frac{\infty}{\infty}$ ($0\cdot\infty=\frac{0}{0}\lor \frac{\infty}{\infty}$).
+\section{Teorema di de l'Hopital}
+Siano $f,g:]a;b[\rightarrow\mathbb{R}$ derivabili e si supponga che: $\lim\limits_{x\rightarrow a^+}f(x)=0\lor \infty, \lim\limits_{x\rightarrow a^+}g(x)=0 \lor \infty$, $g'(x)
+\neq 0$ su $]a;b[$ e che esista $\lim\limits_{x\rightarrow a^+}\frac{f'(x)}{g'(x)}=l\in\mathbb{\bar{R}}$. Allora se $g(x)\neq 0$ su $]a;b[$ $\exists\lim\limits_{x\rightarrow a^
++}\frac{f(x)}{g(x)}=\lim\limits_{x\rightarrow a^+}\frac{f'(x)}{g'(x)}$.\\
+Il teorema rimane valido anche a sinistra di $b$, all'interno e se gli estremi sono infiniti.
+\subsubsection{Dimostrazione}
+Si provi a dimostrare $\frac{0}{0}$, si supponga che $g'(x)>0$ su $]a;b[$, analogamente se negativa. Poich\`e $\lim\limits_{x\rightarrow a^+}g(x)=0$ e $g(x)$ strettamente 
+crescente, allora $g(x)$ sar\`a positiva su $]a;b[$. Si ridefiniscano $f,g:[a;b[\rightarrow\mathbb{R}$ ponendo $f(a)=0$ e $g(a)=0$. $f$ e $g$ risultano continue su $[a,b[$.
+$\forall x\in [a;b[$ si pu\`o applicare il teorema di Cauchy a $f,g$ su $[a;x]:\exists c_x\in]a;x[:\frac{f(x)-f(a)}{g(x)-g(a)}=\frac{f'(c_x)}{g'(c_x)}$, essendo 
+$f(a)=g(a)=0$, $\frac{f(x)}{g(x)}=\frac{f'(c_x)}{g'(c_x)}$, osservando che per $x\rightarrow a^+$, $c_x\rightarrow a^+$. Ovviamente $\lim\limits_{x\rightarrow a^+}
+\frac{f'(x)}{g'(x)}=l=\lim\limits_{x\rightarrow a^+}\frac{f(x)}{g(x)}=l$.
+\subsubsection{Nota}
+Se $\nexists\lim\limits_{x\rightarrow a^+}\frac{f'(x)}{g'(x)}$ non posso dire nulla sul limite delle loro primitive.
+\subsection{Corollario}
+Questo corollario si usa per indagare la derivabilit\`a di una funzione in un punto, Se non esistono i limiti non si possono determinare la derivata destra e sinistra e si deve controllare con il limite del rapporto incrementale.\\
+$f:]a;b[\rightarrow\mathbb{R},x_0\in]a;b[,\delta>0$
+\begin{itemize}
+\item $f$ continua in $[x_0;x_0+\delta[$, derivabile in $]x_0;x_0+\delta[$. Se $\exists\lim\limits_{x\rightarrow x_0^+}f'(x)\in\mathbb{\bar{R}}$, allora $\exists f'_+(x_0)=
+\lim\limits_{x\rightarrow x_0^+}f'(x)$, se \`e finito, $f$ \`e derivabile da destra in $x_0$.
+\item $f$ continua in $]x_0-\delta;x_0]$, derivabile in $]x_0-\delta;x_0[$. Se $\exists\lim\limits_{x\rightarrow x_0^-}f'(x)\in\mathbb{\bar{R}}$, allora $\exists f'_-(x_0)=
+\lim\limits_{x\rightarrow x_0^-}f'(x)$, se \`e finito, $f$ \`e derivabile da sinistra in $x_0$.
+\item $f$ continua in $]x_0-\delta;x_0+\delta[$, derivabile in $]x_0-\delta;x_0+\delta[\backslash\{x_0\}$. Se $\exists\lim\limits_{x\rightarrow x_0}f'(x)$, allora $\exists f'(x_0)=\lim\limits_{x\rightarrow x_0^-}f'(x)$, in particolare se il limite \`e finito, $f$ risulta derivabile in $x_0$.
+\end{itemize}
+\subsubsection{Dimostrazione}
+Per ipotesi $\exists\lim\limits_{x\rightarrow x_0^+}f'(x)\in\mathbb{\bar{R}}$, $\lim\limits_{x\rightarrow x_0^+}f'(x)=\lim\limits_{x\rightarrow x_0^+}\frac{f'(x)}{1}$
+$=\lim\limits_{x\rightarrow x_0^+}\frac{f'(x)}{(x)'}=\lim\limits_{x\rightarrow x_0^+}\frac{f(x)-f(x_0)}{x-x_0}$

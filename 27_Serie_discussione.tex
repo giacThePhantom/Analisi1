@@ -1,0 +1,113 @@
+\chapter{Alcune serie}
+\section{La serie geometrica}
+\begin{equation}
+\sum\limits_{k=0}^{+\infty}q^k
+\end{equation}
+Si ricordi che per $q\neq 1$, $S_n=\sum\limits_{k=0}^n q^k=\frac{1-q^{n+1}}{1-q}$, pertanto:\\
+$\lim\limits_{n\rightarrow+\infty}S_n=\lim\limits_{n\rightarrow+\infty}\frac{1-q^{n+1}}{1-q}=\sum\limits_{k=0}^{+\infty}q^k=
+\begin{cases}
+\frac{1}{1-q}\;\;\;\;|q|<1\\
++\infty\;\;\;\;q\ge 1\\
+\nexists\;\;\;\;q\le 1
+\end{cases}
+$
+\section{Serie di Mengoli}
+\begin{equation}
+\sum\limits_{n=1}^{+\infty}\dfrac{1}{n(n+1)}
+\end{equation}
+Il termine ennesimo tende a zero, la serie converge ad $1$ ed \`e una serie telescopica.
+\subsection{Serie telescopica}
+Si definisce una serie telescopica una serie i cui elementi $a_n=b_n-b_{n+1}$, con $\{b_n\}_n$ un'altra successione. Nel caso di Mengoli $b_n=\frac{1}{n}$, pertanto $S_n=b_1-b_{n+1}$.
+\section{Serie logaritmica}
+\begin{equation}
+\sum\limits_{n=1}^\infty \dfrac{1}{n^\alpha(\log n)^\beta}
+\end{equation}
+Risulta convergente se $\alpha>1,\beta\in\mathbb{R}$ o se $\alpha=1, \beta>1$
+\section{Serie armonica}
+\begin{equation}
+\sum\limits_{n=1}^{+\infty}\dfrac{1}{n}
+\end{equation}
+Soddisfa $\lim\limits_{n\rightarrow+\infty}a_n=\lim\limits_{n\rightarrow+\infty}\frac{1}{n}=0$, si provi che la coda della serie non \`e infinitesima. Basta osservare che $\forall n_0\in\mathbb{N},\; n_0\ge 1$:\\
+$\sum\limits_{n=n_0}^{+\infty}\frac{1}{n}>\sum\limits_{n=n_0+1}^{2n_0}\frac{1}{n}=\frac{1}{n_0+1}+\frac{1}{n_0+2}+\cdots+\frac{1}{2n_0}\ge \frac{1}{2n_0}n_0\ge\frac{1}{2}$,\\
+Pertanto $\Rightarrow\lim\limits_{n_0\rightarrow+\infty}\sum\limits_{n=n_0}^{+\infty}\frac{1}{n}\neq 0$. Pertanto dal teorema segue che la serie non \`e convergente, ed essendo che la 
+serie \`e a termini positivi si pu\`o concludere che $\sum\limits_{n=1}^{+\infty}\frac{1}{n}=+\infty$.
+\subsection{Serie armonica generalizzata}
+\begin{equation}
+\sum\limits_{n=1}^{+\infty}\dfrac{1}{n^\alpha}
+\end{equation}
+\subsubsection{Se $\alpha\le 1$}
+In questo caso la serie \`e divergente:\\
+\begin{enumerate}
+\item Se $\alpha=1$ si \`e gi\`a dimostrato che la serie armonica \`e divergente,
+\item Se $0<\alpha<1\Rightarrow 0<\frac{1}{n}<(\frac{1}{n})^\alpha\;\;\forall n>1$. Da $\sum\limits_n\frac{1}{n}=+\infty$, per il teorema del confronto $\sum\limits_n\frac{1}{n^
+\alpha}=+\infty$
+\item Se $\alpha\le 0$, allora $\sum\limits_{n=1}^{+\infty}\frac{1}{n^\alpha}=\sum\limits_{n=1}^{+\infty}n^{-\alpha}=+\infty$ in quanto $\lim\limits_{n\rightarrow+\infty}n^{-
+\alpha}=1$ se $\alpha=0$ o $=+\infty$ se $\alpha<0$
+\end{enumerate}
+\subsubsection{Se $1<\alpha<2$}
+$\sum\limits_{n=1}^{+\infty}\frac{1}{n^\alpha}$, $f(x)=\frac{1}{x^\alpha}:[1;+\infty[\rightarrow]0;+\infty[$, $\alpha>0$, $f(x)$ decrescente $\int_1^{+\infty}\frac{1}{x^\alpha}dx<+\infty\Leftrightarrow\alpha>1$.
+\subsubsection{Se $\alpha=2$}
+Basta osservare che $0<\frac{1}{n^2}\le\frac{2}{n(n+1)}\;\;\forall n\ge 1$ ($\Leftrightarrow n(n+1)\le 2n^2\Leftrightarrow n\le n^2$). Si conosca che $\sum\limits_n \frac{1}{n(n+1)}<+\infty$ (serie di Mengoli), dal criterio del confronto segue che $\sum\limits_{n=1}^{+\infty}\frac{1}{n^2}<+\infty$.
+\subsubsection{Se $\alpha\ge 2$}
+In questo caso la serie \`e convergente: basta osservare che: $0<\frac{1}{n^\alpha}\le\frac{1}{n^2}$, poich\`e $\sum\limits_{n=1}^{+\infty}\frac{1}{n^2}<+\infty$, per il criterio del 
+confronto si ha $\sum\limits_{n=1}^{+\infty}\frac{1}{n^\alpha}<+\infty$ se $\alpha\ge 2$.
+\subsection{Scrittura della serie armonica generalizzata}
+\begin{equation}
+\sum\limits_{n=1}^{+\infty}\frac{1}{n^\alpha}=
+\begin{cases}
++\infty\;\;\;\;\alpha\le 1\\
+<+\infty\;\;\;\;\alpha> 1\\
+\end{cases}
+\end{equation}
+\section{Serie di potenze}
+Sia $\{a_n\}_n$ una successione di numeri reali con $x_0\in\mathbb{R}$ fissato. $\forall x\in\mathbb{R}$, la serie:
+\begin{equation}
+\sum\limits_{n=0}^{+\infty}a_n(x-x_0)^n
+\end{equation}
+Si dice serie di potenze. Si dice insieme di congruenza $E=\{x\in\mathbb{R}:$ la serie di potenze risulta convergente$\}$.
+\subsection{Note}
+\begin{itemize}
+\item $E\neq\emptyset$: $x_0\in E$ sempre.
+\item Esistono serie per cui $E=\{x_0\}$.
+\end{itemize}
+\subsection{Raggio di convergenza}
+Si dice raggio di convergenza della serie $\sum\limits_{n=0}^{+\infty}a_n(x-x_0)^n$ il valore $r=\sup\limits_{x\in E}|x-x_0|$, $r\in[0;+\infty[$, $r=+\infty$ dove $E$ \`e 
+l'insieme di convergenza della serie.
+\subsection{Teorema}
+Sia $r$ il raggio della serie $\sum\limits_n a_n(x-x_0)^n$, allora:
+\begin{itemize}
+\item la serie converge assolutamente $\forall x\in\mathbb{R}:|x-x_0|<r$.
+\item la serie non converge $\forall x\in\mathbb{R}:|x-x_0|>r$.
+\item Nei punti $x=x_0+r$ e $x=x_0-r$ il suo carattere non \`e determinato.
+\end{itemize}
+\subsection{Determinazione del raggio di convergenza}
+Sia $\{a_n\}_n$ la successione di numeri reali e $\sum\limits_n a_n(x-x_0)^n$ la serie di potenze. Se esiste
+\begin{itemize}
+\item $\lim\limits_{n\rightarrow+\infty}\sqrt[n]{|a_n|}=l\;\;\;\;0\le l\le+\infty$ oppure
+\item $\lim\limits_{n\rightarrow+\infty}|\frac{a_{n+1}}{a_n}|=l\;\;\;\;0\le l\le+\infty$
+\end{itemize}
+La serie di potenze ha raggio di convergenza:\\
+$r=\begin{cases}
++\infty\;\;\;\; l=0\\
+0\;\;\;\;l=+\infty\\
+\frac{1}{l}\;\;\;\;l\in\mathbb{R}
+\end{cases}
+$
+\section{Serie di Taylor}
+Se $f\in C^\infty(]a;b[)$ (derivabile all'infinito con continuit\`a), $x_0\in]a;b[$. Si pu\`o scrivere:
+\begin{equation}
+\sum\limits_{k=0}^\infty \dfrac{f^{(k)}(x_0)}{k!}(x-x_0)^k
+\end{equation}
+\subsection{Definizione}
+$f\in C^\infty(]a;b[)$ si dice sviluppabile in serie di Taylor di centro $x_0$ in $I$ se $\exists$ un intorno $I$ di $x_0$ tale che:
+\begin{itemize}
+\item[i] la serie di Taylor di $f$ centrato in $x_0$ \`e convergente $\forall x\in I$.
+\item[ii] la sua somma \`e $f(x)$.
+\subsection{Condizioni di sviluppabilit\`a}
+$f$ \`e sviluppabile in serie di Taylor $\Rightarrow$
+\begin{equation}
+E_n(x)=f(x)-P_n(x)\rightarrow 0
+\end{equation}
+Ovvero si deve stimare il resto di Lagrange $E_n(x)=\frac{f^{(n+1)}(c_x)}{(n+1)!}(x-x_0)^{n+1}$ e determinare se vale $0$. Stimando il resto di Lagrange si dimostrano facilmente
+che per $x_0=0$ valgono gli sviluppi notevoli dimostrati precedentemente.
+\end{itemize}

@@ -1,0 +1,125 @@
+\chapter{Serie numeriche}
+Una serie numerica \`e la somma formale degli elementi di una successione. $\{a_n\}_n\in\mathbb{R}$ ($a_0+a_1+a_2+\cdots+a_n+\cdots$) e si indica come:
+\begin{equation}
+\sum\limits_{n=0}^{+\infty}a_n
+\end{equation}
+\section{Successione delle somme parziali}
+\`E definita da:
+$S_0=a_0$\\
+$S_1=a_0+a_1$\\
+$S_2=a_0+a_1+a_2=S_1+a_2$\\
+$\cdot$\\
+$\cdot$\\
+$\cdot$\\
+$S_n=a_0+a_1+a_2+\cdots+a_n=S_{n-1}+a_n$
+\section{Convergenza, divergenza, indeterminazione}
+Definita $\{a_n\}$ successione di numeri reali,
+\begin{itemize}
+\item La serie $\sum\limits_n a_n$ \`e convergente se la successione delle somme parziali $\{S_n\}_n$ \`e convergente (ossia ammette limite finito), ovvero se $\lim\limits_{n\rightarrow+
+\infty}S_n=S\in\mathbb{R}$ e si dir\`a che $\sum a_n<+\infty$ ($a_n>0$).
+\item La serie $\sum\limits_n a_n$ \`e divergente se la successione delle somme parziali $\{S_n\}_n$ \`e convergente (ossia ha limite infinito), ovvero se $\lim\limits_{n\rightarrow+
+\infty}S_n=\pm\infty$ e si dir\`a che $\sum a_n=\pm\infty$.
+\item La serie $\sum\limits_n a_n$ \`e indeterminata o irregolare se la successione delle somme parziali $\{S_n\}_n$ \`e indeterminata (ossia non ammette limite infinito), ovvero se $\nexists\lim\limits_{n\rightarrow+\infty}S_n$
+\end{itemize}
+\subsubsection{Note}
+\begin{itemize}
+\item \`E raro trovare la somma di una serie, ma si riuscir\`a sempre a determinarne il carattere.
+\item Il fatto che il termine infinito di una serie sia finito \`e condizione necessaria ma non sufficiente affinch\`e questa sia convergente.
+\item Il carattere di due serie con lo stesso carattere non \`e influenzato da un numero finito di elementi.
+\end{itemize}
+\section{Somma e prodotto di serie}
+\subsection{Somma}
+Se $\sum a_n$ e $\sum b_n$ convergono $\Rightarrow\sum (a_n+b_n)$ \`e convergente e $\sum (a_n+b_n)=\sum a_n+\sum b_n$, valido anche se una diverge o se entrambe divergono con 
+stesso segno, non si pu\`o dire nulla se una diverge positivamente e una negativamente.
+\subsection{Prodotto}
+$\sum (a_n\cdot b_n)=\sum a_n\cdot\sum b_n$, ma il carattere della serie non \`e determinato univocamente dai caratteri dei fattori.
+\section{Criteri di convergenza per serie}
+\subsection{Teorema 1}
+Se $\sum s_n$ serie \`e convergente allora $\lim\limits_{n\rightarrow+\infty}a_n=0$, condizione necessaria affinch\`e la serie sia convergente, ma non \`e sufficiente, per 
+esempio $\sum\limits_{n=1}^{+\infty}\frac{1}{\sqrt{n}}=+\infty$, ma $\lim\limits_{n\rightarrow+\infty}\frac{1}{\sqrt{n}}=0$.
+\subsubsection{Dimostrazione}
+Se $\sum a_n$ \`e convergente allora per definizione $\exists$ finito $\lim\limits_{n\rightarrow+\infty}S_n=S\in\mathbb{R}$, allora basta osservare che $a_n=S_n-S_{n-1}$.
+$\lim\limits_{n\rightarrow+\infty}S_n=S$ e $\lim\limits_{n\rightarrow+\infty}S_{n-1}=S\;\Rightarrow\lim\limits_{n\rightarrow+\infty}a_n=S-S=0$.
+\subsection{Teorema 2}
+Si supponga che $\sum\limits_{n=n_0}^{+\infty} a_n\xrightarrow[n_0\rightarrow +\infty]{}0$, ovvero se la coda di una serie \`e infinitesima, allora la serie \`e 
+convergente.
+\section{Criteri di convergenza per serie a termini $\ge 0$, analoghi per $\le 0$}
+Sia $\sum\limits_n a_n$ con $a_n\ge 0\;\;\;\;\forall n$, allora la serie o converge o diverge positivamente. Infatti la successione delle somme parziali $\{S_n\}$ verifica: 
+$S_{n+1}=a_0+a_1+a_2+\cdots+a_n+a_{n+1}=S_n+a_{n+1}\ge S_n\;\;\;\;\forall n$, $\Rightarrow\{S_n\}_n$ \`e crescente. Allora per il teorema di esistenza del limite delle funzioni 
+monotone $\exists\lim\limits_{n\rightarrow+\infty}S_n$. Tale limite \`e finito o $+\infty$. Sar\`a finito se $\{S_n\}$ \`e limitata superiormente, in ogni caso $\lim\limits_{n
+\rightarrow+\infty}S_n=\sup\limits_{n}$.
+\subsection{Teorema (criterio del confronto)}
+Siano $\{a_n\}_n$ e $\{b_n\}_n$ due successioni tali che $0\le a_n\le b_n\;\;\;\;\forall n\in\mathbb{N}$. Allora 
+\begin{enumerate}
+\item $\sum\limits_n b_n<+\infty\Rightarrow\sum\limits_n a_n<+\infty$
+\item $\sum\limits_n a_n=+\infty\Rightarrow\sum\limits_n b_n=+\infty$
+\end{enumerate}
+\subsubsection{Dimostrazione}
+\begin{itemize}
+\item Sia $\{S_n\}$ la successione delle somme parziali di $\sum a_n$
+\item Sia $\{W_n\}$ la successione delle somme parziali di $\sum b_n$
+\end{itemize}
+Dal confronto tra le successioni si ha ovviamente che $S_n\le W_n\;\;\;\;\forall n\in\mathbb{N}$
+\begin{enumerate}
+\item Se $\sum\limits_n b_n<+\infty,\Rightarrow\{W_n\}$ ammette limite finito, $\Rightarrow\{W_n\}$ \`e limitata superiormente, $\Rightarrow\{S_n\}$ \`e limitata superiormente e ammette
+limite finito, ovvero $\sum\limits_n a_n<+\infty$
+\item Se $\sum\limits_n a_n=+\infty,\Rightarrow\{S_n\}$ non \`e limitata superiormente, $\Rightarrow\{W_n\}$ non \`e limitata superiormente, ovvero $\sum\limits_n b_n=+\infty$
+\end{enumerate}
+\subsection{Teorema (criterio del confronto asintotico)}
+Siano $\{a_n\}_n$ e $\{b_n\}_n$ due successioni a valori reali $>0$ tali che:
+\begin{equation}
+\lim\limits_{n\rightarrow+\infty}\dfrac{a_n}{b_n}=l
+\end{equation}
+Dove $l\in]0;+\infty[$, ($\Leftrightarrow a_n\sim lb_n$) per $n\rightarrow+\infty$, $\Rightarrow\sum\limits_n a_n$, $\sum\limits_n b_n$ hanno lo stesso carattere.
+
+\subsubsection{Dimostrazione del criterio del confronto asintotico}
+Per ipotesi si ha che $\lim\limits_{n\rightarrow+\infty}\frac{a_n}{b_n}=l\in ]0;+\infty[$. Usando la definizione di limite con $\epsilon=\frac{l}{2}>0$, perci\`o $\exists N\in
+\mathbb{N}:\frac{l}{2}<\frac{a_n}{b_n}<\frac{3}{2}l\Leftrightarrow\frac{l}{2}b_n<a_n<\frac{3l}{2}b_n\;\;\forall n\ge N$. Da queste disuguaglianze grazie al criterio del confronto 
+si ottiene:
+\begin{itemize}
+\item $\sum b_n=+\infty\Rightarrow\sum a_n=+\infty$.
+\item $\sum a_n=+\infty\Rightarrow\sum b_n=+\infty$.
+\item $\sum b_n<+\infty\Rightarrow\sum a_n<+\infty$.
+\item $\sum a_n<+\infty\Rightarrow\sum b_n<+\infty$.
+\end{itemize}
+\subsection{Criterio della radice ennesima}
+Sia $\{a_n\}_n$ una successione di numeri reali $\ge 0$. Se esiste $\lim\limits_{n\rightarrow+\infty}\sqrt[n]{a_n}=l\in [0;+\infty[$:
+\begin{itemize}
+\item $l<1\Rightarrow\sum\limits_n a_n<+\infty$
+\item $l>1\Rightarrow\sum\limits_n a_n=+\infty$ 
+\item $l=1$ non si pu\`o conoscere il carattere della serie a priori.
+\end{itemize}
+Si ricordi che:
+\begin{itemize}
+\item $\sqrt[n]{n}\xrightarrow[n\rightarrow+\infty]{}1$
+\item $\sqrt[n]{n^k}\xrightarrow[n\rightarrow+\infty]{}1$
+\item $\sqrt[n]{a}\xrightarrow[n\rightarrow+\infty]{}1$
+\item $\sqrt[n]{a^n+b^n}\xrightarrow[n\rightarrow+\infty]{}b$ se $b\ge a$.
+\end{itemize}
+\subsubsection{Dimostrazione}
+$\mathbf{l<1}$ Si ha $l<\frac{l+1}{2}<1$: da $\lim\limits_{n\rightarrow+\infty}\sqrt[n]{a_n}=l\Rightarrow\exists N\in\mathbb{N}:\sqrt[n]{a_n}\le\frac{l+1}{2}\dot{=}q$, ovvero
+$0\le a_n\le q^n\;\;\forall n\in\mathbb{N}$. Poich\`e $\sum q^n<+\infty$, per il criterio del confronto anche $\sum a_n<+\infty$.\\
+$\mathbf{l>1}$ Dalla definizione di limite si ha che $\exists N\in\mathbb{N}:\sqrt[n]{a_n}\ge 1\;\;\forall n\in\mathbb{N}\Rightarrow a_n\ge 1\Rightarrow\lim\limits_{n\rightarrow+
+\infty}a_n\neq 0\Rightarrow$ la serie non \`e convergente. Essendo a termini positivi \`e divergente positivamente.\\
+$\mathbf{l=1}$
+\begin{itemize}
+\item $\sum\limits_{n=1}^\infty\frac{1}{n}=+\infty\;\;\;\;\frac{1}{\sqrt[n]{n}}\rightarrow 1$
+\item $\sum\limits_{n=1}^\infty\frac{1}{n^2}<+\infty\;\;\;\;\frac{1}{(\sqrt[n]{n})^2}\rightarrow 1$
+\end{itemize}
+\subsection{Criterio del rapporto}
+Sia $\{a_n\}_n$ una successione di numeri reali $\ge 0$. Se esiste $\lim\limits_{n\rightarrow+\infty}\frac{a_{n+1}}{a_n}=l\in[0;+\infty[$. Se
+\begin{itemize}
+\item $l<1\Rightarrow\sum\limits_n a_n<+\infty$
+\item $l>1\Rightarrow\sum\limits_n a_n=+\infty$ 
+\item $l=1$ non si pu\`o conoscere il carattere della serie a priori.
+\end{itemize}
+\subsubsection{Dimostrazione}
+La dimostrazione \`e analoga alla dimostrazione del criterio della radice ennesima.
+\section{Serie numeriche di segno qualsiasi}
+Una serie $\sum a_n(a_n\in\mathbb{R})$ si dice assolutamente convergente se la serie a termini non negativi $\sum |a_n|$ \`e convergente.
+\subsection{Criterio della convergenza assoluta}
+Se la serie $\sum a_n$ \`e assolutamente convergente ($\sum |a_n|<+\infty$) allora anche la serie $\sum a_n$ lo \`e e si ha $|\sum a_n|\le \sum |a_n|$. Si dice che $\sum |a_n|<+
+\infty\Rightarrow\sum a_n<+\infty$.
+\section{Serie numeriche a segno alterno}
+\subsection{Criterio di Leibniz}
+Sia $\{a_n\}$ una successione a termini $\ge0$, decrescente e $\lim\limits_{n\rightarrow+\infty}a_n=0$. Allora la serie $\sum\limits_{n=0}^{+\infty}(-1)^na_n$ \`e convergente.

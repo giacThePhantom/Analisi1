@@ -1,0 +1,199 @@
+\chapter{Integrali di Riemann}
+Gli obbiettivi dell'integrazione sono di dare una definizione generale di un'area di una figura piana e trovare un algoritmo per il suo calcolo effettivo.
+\section{Metodo di esaustione di Archimede}
+Si tenti di trovare l'area E di un intervallo $[0;b]$, $b>0$, ovvero $E=\{(x;y)\in\mathbb{R^2}:0\le x\le b, 0\le y\le f(x)\}$. Si divida l'intervallo $[0;b]$ in $n$ intervalli di 
+ampiezza $\frac{b}{n}\;\; n\in\mathbb{N}$. Si ottengono $x_j=j\frac{b}{n}$ nell'ordine: $0\le x_0<x_1<x_2<\cdots x_n=b$.\\
+Si considerino i rettangoli con base questi intervalli e con altezza pari al massimo valore assunto da $f(x)=x^2$ (in questo caso) in questo intervallo. L'area complessiva di 
+questi rettangoli risulta\\
+$S_n=\frac{b}{n}[(\frac{b}{n})^2+(\frac{2b}{n})^2+(\frac{3b}{n})^2+\cdots+(\frac{nb}{n})^2]=$\\
+$=\frac{b^3}{n^3}[1^2+2^2+3^2+\cdots+n^2]=$\\
+$=\frac{b^3}{n^3}\sum\limits_{k=1}^nk^2=\frac{b^3}{n^3}\cdot\frac{n(n+1)(2n+1)}{6}$.\\
+Si considerino i rettangoli con base questi intervalli e con altezza pari al minimo valore assunto da $f(x)=x^2$ (in questo caso) in questo intervallo. L'area complessiva di 
+questi rettangoli risulta\\
+$s_n=\frac{b}{n}[0^2+(\frac{b}{n})^2+(\frac{2b}{n})^2+(\frac{3b}{n})^2+\cdots+((n-1)\frac{b}{n})^2]=$\\
+$=\frac{b^3}{n^3}[1^2+2^2+3^2+\cdots+(n-1)^2]=$\\
+$=\frac{b^3}{n^3}\sum\limits_{k=1}^{n-1}k^2=\frac{b^3}{n^3}\cdot\frac{n(n-1)(2n-1)}{6}$.\\
+Si osservi che $s_n\le areaE\le S_n$ e che $n\rightarrow+\infty$ $s_n=S_n=\frac{b^3}{3}$, sar\`a naturale perci\`o definire $areaE=\lim\limits_{n\rightarrow+\infty}S_n=\lim
+\limits_{n\rightarrow+\infty}s_n=\frac{b^3}{3}$.
+\section{Definizione di integrale di Riemann}
+Sia $f:[a;b]\rightarrow\mathbb{R}$ una funzione definita su un intervallo limitato. Si scelgano $(n+1)$ punti nell'intervallo $[a;b]$: $a=x_0<x_1<x_2<\cdots<x_n=b$ detti 
+suddivisione di $[a;b]$ che si indica con $D$. I rispettivi intervalli: $[x_0;x_1],[x_1;x_2],\cdots,[x_{n-1};x_n]$ formano una partizione di $[a;b]$. Si consideri $m_i=\inf
+\limits_{[x_{i-1};x_i]}f(x)$ e $M_i=\inf\limits_{[x_{i-1};x_i]}f(x)$ e si costruisca $s(D,f)=\sum\limits_{i=1}^n m_i(x_i-x_{i-1})$ o somma inferiore di $f$ relativa a $D$ e
+$S(D,f)=\sum\limits_{i=1}^n M_i(x_i-x_{i-1})$ o somma superiore di $f$ relativa a $D$. Si osservi che 
+\begin{itemize}
+\item Per ogni suddivisione $D$ di $[a;b]$ si ha $\inf\limits_{[a,b]}f(b-a)\le s(D,f)\le S(D,f)\le \sup\limits_{[a,b]}f(b-a)$.
+\item Per ogni suddivisione $D_1,D_2$ di $[a,b]$, $D_1\subset D_2$, $s(D_1,f)\le s(D_2,f)\le S(D_2,f)\le S(D_1,f)$.
+\item Per ogni suddivisione $D',D''$ di $[a;b]$ si ha $s(D',f)\le S(D'', f)$, infatti: $s(D',f)\le s(D\cap D'',f)\le S(D'\cap D'',f)\le S(D'',f)$
+\end{itemize}
+Da questo si ottiene che $\sup\limits_D s(D,f)\le \inf\limits_D S(D,f)$. Una funzione si dir\`a  integrabile se i due valori sono uguali.
+\subsection{Definizione}
+Sia $f:[a;b]\rightarrow\mathbb{R}$ una funzione limitata si dice integrabile secondo Riemann se $\sup\limits_D s(D,f)=\inf\limits_D S(D,f)$ e il valore comune \`e detto integrale 
+di Riemann di $f$:
+\begin{equation}
+\int_a^bf(x)dx\dot{=}\sup\limits_D s(D,f)= \inf\limits_D S(D,f)
+\end{equation} 
+$R([a,b])$ indica l'insieme delle funzioni integrabili secondo Riemann.
+\subsection{Interpretazione geometrica dell'integrale}
+$f\in R([a;b])$, $f(x)\ge 0$ su $[a;b]$, sia $E=\{(x;y)\in\mathbb{R^2}:q\le x\le b\;\;0\le y\le f(x)\}$. \`E ragionevole definire area $E\dot{=}\int_a^bf(x)dx$, infatti $s(D,f)
+\le areaE\le S(D,f)\;\forall D\subset[a;b]$. Se $f(x)\le 0$ su $[a;b]$ $\int_a^b\dot{=}-areaE$.
+\subsubsection{Osservazioni}
+Nel metodo di esaustione di Archimede $D=\{j\frac{b}{n}:j=0,\cdots,n\}\forall n$, $s_n\;e \sum\limits_d s(d,f)\le \inf\limits_D S(D,f)\le S_n$ che converge a $\frac{b^3}{3}
+$ L'area $E=\int_0^b x^2dx=\frac{b^3}{3}$.
+\subsubsection{Teorema}
+\begin{enumerate}
+\item $f:[a;b]\rightarrow\mathbb{R}$ continua $\Rightarrow f\in R([a;b])$
+\item $f:[a;b]\rightarrow\mathbb{R}$ monotona $\Rightarrow f\in R([a;b])$
+\item $f:[a;b]\rightarrow\mathbb{R}$ limitata  e con un numero finito di punti di discontinuit\`a $\Rightarrow f\in R([a;b])$
+\end{enumerate}
+\subsection{Teorema (propriet\`a dell'integrale)}
+Siano $f,g\in R([a;b])$ allora
+\begin{itemize}
+\item $\int_a^b[\alpha f(x)+\beta g(x)]dx=\alpha\int_a^b f(x)dx+\beta\int_a^bg(x)dx$.
+\item $f\le g$ su $[a;b]\Rightarrow\int_a^b f(x) dx\le \int_a^b g(x) dx$.
+\item $\forall c\in]a;b[$ allora $\int_a^b f(x) dx=\int_a^c f(x) dx+\int_c^b f(x) dx$.
+\item $|\int_a^b f(x) dx|\le \int_a^b |f(x)| dx$
+\end{itemize}
+\subsection{Teorema della media integrale}
+Sia $f\in R([a;b])$ una funzione integrabile, $m=\inf_{[a;b]}f$, $M=\sup_{[a;b]}f$. Allora:
+\begin{itemize}
+\item[\textbf{i}] $m\le \frac{1}{b-a}\int_a^b f(x)dx\le M$ \`e la media integrale.
+\item[\textbf{ii}] Se $f$ \`e continua su $[a;b]\exists c\in ]a;b[:\frac{1}{b-a}\int_a^b f(x)dx=f(c)$
+\end{itemize}
+\subsubsection{Dimostrazione i}
+$m\le f(x)\le M$ su $[a;b]$, allora $\int_a^b mdx\le \int_a^bf(x)dx\le\int_a^b Mdx$ monotonia dell'integrale, $\int_a^b mdx=m(b-a)$ e $\int_a^b Mdx=M(b-a)\Rightarrow m\le 
+\frac{1}{b-a}\int_a^b f(x)dx\le M$.
+\subsubsection{Dimostrazione ii}
+Se $f$ \`e continua su $[a;b]$, per il teorema di Weierstrass e dei valori intermedi $f$ assume tutti i valori intermedi tra $m=\min\limits_{[a;b]} f$ e $M=\max\limits_{[a;b]} f
+$, ovvero $\exists c\in ]a;b[:f(c)=\frac{1}{b-a}\int_a^b f(x)dx$
+\section{Funzione primitiva}
+Una funzione $F:I\rightarrow\mathbb{R}, I$ intervallo si dice primitiva di $f$ se $F$ \`e derivabile e $F'=f\;\;\forall x\in I$. Per introdurre il concetto di funzione integrale 
+si deve estendere l'integrale ad un intervallo orientato, ovvero definire $\int_a^b f(x)dx$ anche se $a>b$. In questo caso $\int_a^b f(x)dx\dot{=}-\int_b^a f(x)dx$. $\int_a^a 
+f(x)dx=0$.
+\subsubsection{Osservazione}
+Rimangono validi tutte le propriet\`a dell'integrale tranne la monotonia: in questo caso si deve modificare: $f(x)\le g(x)\;\;\forall x\Rightarrow \frac{1}{b-a}\int_a^b f(x)dx\le 
+\frac{1}{b-a}\int_a^b g(x)dx$
+\section{La funzione integrale}
+Sia $f:I\rightarrow\mathbb{R}$, $I$ intervallo e $f\in R([a;b])$ sia $c\in I$ fissato, si definisce la funzione integrale $F_c(x)=\int_c^x f(t)dt\;\;\forall x\in I$ relativa al 
+punto $c$.
+\section{Teorema fondamentale del calcolo integrale}
+Sie $f\in C([a;b])$ continua su qualunque intervallo limitato, allora la funzione integrale $F_c:[a;b]\rightarrow\mathbb{R}$ definita da $F_c(x)=\int_c^x f(t)dt$ con $c\in[a;b]$ 
+fissato \`e derivabile e $F'_c(x)=f(x)\forall x\in[a;b]$, ovvero $F(x)_c$ \`e una primitiva di $f(x)$ su $[a;b]$.
+\subsubsection{Dimostrazione}
+Si prenda $x\in]a;b[$ (nel caso di $x=a\lor x=b$ esiste rispettivamente solo la derivata destra o sinistra). Sia $h>0(:x+h\in]a;b[)$, $F_c(x+h)-F_c(x)=\int_c^{x+h}f(t)dt-
+\int_c^xf(t)dt=\int_c^xf(t)dt+\int_x^{x+h}f(t)dt-\int_c^xf(t)dt=\int_x^{x+h}f(t)dt$, $\frac{F_c(x+h)-F_c(x)}{h}=\frac{1}{h}\int_x^{x+h}f(t)dt$, $\frac{1}{h}\int_x^{x+h}f(t)dt$  
+media integrale. Pertanto $\frac{1}{h}\int_x^{x+h}f(t)dt=f(c_h)$, e $x<c_h<x+h$. Per la continuit\`a di $f$, $\lim\limits_{h\rightarrow0^+}f(c_h)=f(x)\Rightarrow\lim\limits_{h
+\rightarrow0^+}\frac{F_c(x+h)-F_c(x)}{h}=\lim\limits_{h\rightarrow0^+}f(c_h)=f(x)$. Analogamente si dimostra per $h<0:$ $\lim\limits_{h\rightarrow0^+}\frac{F_c(x+h)-F_c(x)}{h}
+=F'(x)=f(x)$.
+\subsubsection{Nota}
+$f\in C([a;b]), \alpha(x):I\subset\mathbb{R}\rightarrow[a;b], \beta(x):I\subset\mathbb{R}\rightarrow[a;b]$ derivabili $\int_{\alpha(x)}^{\beta(x)}f(t)dt=\int_{\alpha(x)}^a f(t)dt
++\int_a^{\beta(x)}f(t)dt=\int_a^{\beta(x)}f(t)dt-\int_a^{\alpha(x)}f(t)dt$, perci\`o derivando $(\int_{\alpha(x)}^{\beta(x)}f(t)dt)'=(F_a(\beta(x)))'-
+(F_a(\alpha(x)))'=f(\beta(x))\beta'(x)-f(\alpha(x))\alpha'(x)$
+\subsubsection{Osservazioni sulle primitive}
+Sia $f:I\subset\mathbb{R}\rightarrow\mathbb{R}$
+\begin{itemize}
+\item Se $F(x)$ \`e una primitiva di $f(x)$ allora $F(x)+k$ \`e ancora una primitiva
+\item Se $F(x)$ e $G(x)$ sono due primitive di $f(x)$, esse differiscono di una costante.%Agiungi dimostrazione
+\end{itemize}
+Da questi fatti e dal teorema fondamentale del calcolo si ha che tutte le primitive di $f\in C([a;b])$ sono nella forma $F(x)=\int_a^xf(t)dt+k\;\;k\in\mathbb{R}$.
+\section{Teorema del calcolo dell'integrale per variazione di una primitiva o teorema di Torricelli-Barrow}
+Sia $f\in C([a;b])$. Se $F$ \`e una primitiva di $f$ in $[a;b]$, allora $\int_a^bf(t)dt=F(b)-F(a)=[F(x)]^b_a=F(x)|_a^b$.
+\subsubsection{Dimostrazione}
+Sia $F$ una primitiva di $f$. Allora $\exists c\in\mathbb{R}:F(x)=\int_a^xf(t)dt+c\;\;\forall x\in[a;b]$, per $x=a$ si ha $F(a)=\int_a^af(t)dt+c$, ovvero $F(a)=c$, Quindi 
+$F(x)=\int_a^xf(t)dt+F(a)$, per $x=b$ si ha $F(b)=\int_a^bf(t)dt+F(a)\Rightarrow\int_a^bf(t)dt=F(b)-F(a)$.
+\section{Notazione}
+\begin{itemize}
+\item $\int_a^bf(x)dx$, integrale definito di $f$, numero $\in\mathbb{R}$.
+\item $\int_a^xf(t)dt$, funzione integrale di $f$ relativa al punto $a$.
+\item $\int f(x)dx$, integrale indefinito di $f$, l'insieme di tutte le primitive di $f$ rispetto a $x$.
+\end{itemize}
+\section{Tabella delle primitive immediate}
+\begin{center}
+\begin{tabular}{c|c}
+$f(x)$ & $F(x)$\\
+\hline
+$x^\alpha$\tiny{$\alpha\neq 1$} & $\frac{x^{\alpha+1}}{\alpha+1}$ \\ 
+$\frac{1}{x}$ & $\log |x|$\\
+$e^x$ & $e^x$\\
+$a^x$ & $\frac{a^x}{\log a}$\\
+$\sin x$ & $-\cos x$\\
+$\cos x$ & $\sin x$\\
+$\frac{1}{\sqrt{1-x^2}}$ & $\arcsin x$\\
+$-\frac{1}{\sqrt{1-x^2}}$ & $\arccos x$\\
+$\frac{1}{1+x^2}$ & $\arctan x$\\
+$\frac{1}{\cos^2 x} $ & $\tan x$\\
+\end{tabular}
+\begin{tabular}{c|c}
+$f(x)$ & $F(x)$\\
+\hline
+$(\phi(x))^\alpha\phi'(x)$\tiny{$\alpha\neq 1$} & $\frac{\phi(x)^{\alpha+1}}{\alpha+1}$ \\ 
+$\frac{\phi'(x)}{\phi(x)}$ & $\log |\phi(x)|$\\
+$e^{\phi(x)}\phi'(x)$ & $e^\phi(x)$\\
+$a^{\phi(x)}\phi'(x)$ & $\frac{a^\phi(x)}{\log a}$\\
+$\phi'(x)\sin \phi(x)$ & $-\cos \phi(x)$\\
+$\phi'(x)\cos \phi(x)$ & $\sin \phi(x)$\\
+$\frac{\phi'(x)}{\sqrt{1-\phi(x)^2}}$ & $\arcsin \phi(x)$\\
+$-\frac{\phi'(x)}{\sqrt{1-\phi(x)^2}}$ & $\arccos \phi(x)$\\
+$\frac{\phi'(x)}{1+\phi(x)^2}$ & $\arctan \phi(x)$\\
+$\frac{\phi'(x)}{\cos^2 \phi(x)} $ & $\tan \phi(x)$\\
+\end{tabular}
+\end{center}
+\subsection{Osservazioni}
+\begin{itemize}
+\item L'integrale indefinito mantiene la linearit\`a dell'integrale definito: $\int [\alpha f(x)+\beta g(x)]dx=\alpha\int f(x)dx+\beta\int g(x)dx$, $\forall \alpha, \beta\in
+\mathbb{R}\;\forall f(x),g(x)\in C([a;b])$.
+\item Non tutte le funzioni hanno una primitiva esprimibile attraverso una funzione elementare.
+\item Dal teorema del calcolo integrale si ha $(\int_a^x f(t)dt)'=f(x)$, mentre dal teorema di Torricelli-Barrow si ha $\int_a^x f'(x)=f(x)-f(a)$, ovvero l'integrazione \`e 
+l'operazione inversa alla derivazione a meno di una costante.
+\end{itemize}
+\section{Integrazione per parti}
+Siano $f,g\in c^1([a;b])$, si ricordi che: $(fg)'=f'g+fg'$, da cui $f'g=(fg)'-fg'$, considerando la funzione primitiva per ciascun addendo si ha: 
+\begin{equation}
+\int f'g=fg-\int fg'
+\end{equation}
+\section{Integrazione per sostituzione}
+Sia $f\in C([a;b])$ una funzione e $\phi:[c;d]\rightarrow[a;b]$ $t\rightarrow x=\phi(t)$ una funzione invertibile e $F$ la funzione primitiva di $f$ su $[a;b]$. $(F\circ\phi)'(t)=F'(\phi(t))\phi'(t)\;\;\forall t\in [c;d] =f(\phi(t))\phi'(t)$, ossia $F\circ\phi$ \`e una primitiva di $f(\phi(t))\phi'(t)$ in $[c;d]$. Ovvero $(F\circ\phi)=\int f(\phi(t))\phi'(t)dt$. Ovvero
+\begin{equation}
+(\int f(x)dx)_{x=\phi(t)}=(\int f(\phi(t))\phi'(t)dt)
+\end{equation}
+\begin{equation}
+(\int f(x)dx)=(\int f(\phi(t))\phi'(t)dt)_{t=\phi^{-1}(x)}
+\end{equation}
+\subsubsection{Note}
+\begin{itemize}
+\item $f(x)\rightarrow f(\phi(t))$
+\item $dx\rightarrow \phi'(t)dt$
+\end{itemize}
+\subsection{Sostituzioni per funzioni razionali in seno e coseno}
+Ponentdo $t=\tan\frac{x}{2}\Rightarrow x=2\arctan t$, $dx=\frac{2}{1+t^2}dt$ ottengo che:
+\begin{itemize}
+\item $\sin x=\frac{2t}{1+t^2}$,
+\item $\cos x=\frac{1-t^2}{1+t^2}$
+\end{itemize}
+\subsection{Altra sostituzione utile: le funzioni iperboliche}
+\begin{itemize}
+\item Coseno iperbolico: $\cosh x=\dfrac{e^x+e^{-x}}{2}$
+\item Seno iperbolico: $\sinh x=\dfrac{e^x-e^{-x}}{2}$
+\end{itemize}
+Valgono le seguenti propriet\`a:
+\begin{itemize}
+\item $(\cosh x)'=\sinh x$
+\item $(\sinh x)'=\cosh x$
+\item $\cosh^2 x-\sinh^2 x=1$
+\end{itemize}
+\section{Integrazione delle funzioni razionali}
+\begin{equation}
+\int\dfrac{P_n(x)}{Q_m(x)}
+\end{equation}
+Dove $P_n(x)$ \`e un polinomio di grado $n$ e $Q_m(x)$ un polinomio di grado $m$. Se $n>m$ \`e necessario compiere la divisione tra polinomi, a cui va aggiunto, se esiste il resto. Verranno considerati i casi in cui $m\le 2$
+\subsection{$\mathbf{m=1}$}
+$\int\frac{k}{ax+b}=\frac{k}{a}\int\frac{a}{ax+b}=\log|ax+b|+c,c\in\mathbb{R}$
+\subsection{$\mathbf{m=2}$}
+\subsubsection{Il denominatore ha due radici distinte}
+Dato $\int\frac{ax+b}{cx^2+dx+f}dx$ siano $X_1$ e $x_2$ le radici del denominatore, si dovr\`a risolvere l'integrale associato $\int(\frac{y}{x-x_1}+\frac{z}{x-x_2}dx$.
+\subsubsection{Il denominatore \`e un quadrato perfetto}
+Si procede per sostituzione: $\int\frac{ax+b}{(cx+d)^2}dx$ si sostituisca $cx+d$ con $t$ e lo si riconduca alla forma di somma di potenze.
+\subsubsection{Il denominatore non si annulla mai}
+\begin{itemize}
+\item Se il numeratore ha grado $0$ lo si riconduce mediante raccoglimenti alla forma $a\int \frac{1}{f(x)^2+1}dx=a\arctan(f(x))+c$.
+\item Se il numeratore ha grado $1$ lo si riconduce mediante raccoglimenti alla forma $a\int\frac{f'(x)}{f(x)}dx+a\int\frac{1}{g(x)^2+1}dx=a\log f(x)+a\arctan g(x)$
+\end{itemize}
