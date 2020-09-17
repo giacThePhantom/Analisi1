@@ -1,0 +1,313 @@
+\BOOKMARK [0][-]{chapter.1}{Elementi di logica}{}% 1
+\BOOKMARK [0][-]{chapter.2}{Insiemistica}{}% 2
+\BOOKMARK [1][-]{section.2.1}{Convenzioni di scrittura degli insiemi}{chapter.2}% 3
+\BOOKMARK [1][-]{section.2.2}{Operazioni tra insiemi}{chapter.2}% 4
+\BOOKMARK [2][-]{subsection.2.2.1}{Unione di insiemi}{section.2.2}% 5
+\BOOKMARK [2][-]{subsection.2.2.2}{Intersezione di insiemi}{section.2.2}% 6
+\BOOKMARK [2][-]{subsection.2.2.3}{Differenza di insiemi}{section.2.2}% 7
+\BOOKMARK [2][-]{subsection.2.2.4}{Complementare di un insieme E rispetto all'insieme universale X}{section.2.2}% 8
+\BOOKMARK [2][-]{subsection.2.2.5}{Alcune propriet\340 di unione e intersezione}{section.2.2}% 9
+\BOOKMARK [1][-]{section.2.3}{Caratterizzazione di insiemi}{chapter.2}% 10
+\BOOKMARK [1][-]{section.2.4}{Leggi di de Morger}{chapter.2}% 11
+\BOOKMARK [0][-]{chapter.3}{Insiemi numerici}{}% 12
+\BOOKMARK [1][-]{section.3.1}{Assiomi algebrici}{chapter.3}% 13
+\BOOKMARK [2][-]{subsection.3.1.1}{La somma}{section.3.1}% 14
+\BOOKMARK [2][-]{subsection.3.1.2}{Il prodotto}{section.3.1}% 15
+\BOOKMARK [2][-]{subsection.3.1.3}{Ulteriori propriet\340 di somma e prodotto}{section.3.1}% 16
+\BOOKMARK [1][-]{section.3.2}{Ordinamento}{chapter.3}% 17
+\BOOKMARK [2][-]{subsection.3.2.1}{Teorema dell'incompletezza di Q}{section.3.2}% 18
+\BOOKMARK [1][-]{section.3.3}{I numeri reali}{chapter.3}% 19
+\BOOKMARK [1][-]{section.3.4}{Propriet\340 Q e R}{chapter.3}% 20
+\BOOKMARK [2][-]{subsection.3.4.1}{Densit\340}{section.3.4}% 21
+\BOOKMARK [2][-]{subsection.3.4.2}{Archimedea}{section.3.4}% 22
+\BOOKMARK [2][-]{subsection.3.4.3}{Completezza dei reali}{section.3.4}% 23
+\BOOKMARK [0][-]{chapter.4}{Il valore assoluto}{}% 24
+\BOOKMARK [0][-]{chapter.5}{Estremi di insiemi}{}% 25
+\BOOKMARK [1][-]{section.5.1}{Intervalli}{chapter.5}% 26
+\BOOKMARK [1][-]{section.5.2}{Maggiorante}{chapter.5}% 27
+\BOOKMARK [1][-]{section.5.3}{Minorante}{chapter.5}% 28
+\BOOKMARK [1][-]{section.5.4}{Massimo}{chapter.5}% 29
+\BOOKMARK [1][-]{section.5.5}{Minimo}{chapter.5}% 30
+\BOOKMARK [2][-]{subsection.5.5.1}{Osservazioni circa massimo/minimo}{section.5.5}% 31
+\BOOKMARK [1][-]{section.5.6}{Estremo superiore}{chapter.5}% 32
+\BOOKMARK [1][-]{section.5.7}{Estremo inferiore}{chapter.5}% 33
+\BOOKMARK [1][-]{section.5.8}{Osservazioni estremo superiore/inferiore}{chapter.5}% 34
+\BOOKMARK [1][-]{section.5.9}{Insiemi finiti}{chapter.5}% 35
+\BOOKMARK [1][-]{section.5.10}{Completezza dell'insieme dei Reali}{chapter.5}% 36
+\BOOKMARK [0][-]{chapter.6}{Potenze, esponenziali, logaritmi}{}% 37
+\BOOKMARK [1][-]{section.6.1}{Potenze}{chapter.6}% 38
+\BOOKMARK [2][-]{subsection.6.1.1}{Propriet\340}{section.6.1}% 39
+\BOOKMARK [2][-]{subsection.6.1.2}{Potenze ad esponente intero positivo xn}{section.6.1}% 40
+\BOOKMARK [2][-]{subsection.6.1.3}{Potenze ad esponente intero negativo x-n}{section.6.1}% 41
+\BOOKMARK [2][-]{subsection.6.1.4}{Potenze ad esponente frazionario x1n}{section.6.1}% 42
+\BOOKMARK [2][-]{subsection.6.1.5}{Potenze ad esponente razionale yq}{section.6.1}% 43
+\BOOKMARK [1][-]{section.6.2}{Esponenziali ax}{chapter.6}% 44
+\BOOKMARK [1][-]{section.6.3}{Logaritmi loga x}{chapter.6}% 45
+\BOOKMARK [2][-]{subsection.6.3.1}{Esistenza del logaritmo}{section.6.3}% 46
+\BOOKMARK [2][-]{subsection.6.3.2}{Propriet\340}{section.6.3}% 47
+\BOOKMARK [0][-]{chapter.7}{Numeri Complessi}{}% 48
+\BOOKMARK [1][-]{section.7.1}{Definizione}{chapter.7}% 49
+\BOOKMARK [1][-]{section.7.2}{Piano di Gauss}{chapter.7}% 50
+\BOOKMARK [1][-]{section.7.3}{Alcune operazioni coi numeri complessi}{chapter.7}% 51
+\BOOKMARK [2][-]{subsection.7.3.1}{Somma}{section.7.3}% 52
+\BOOKMARK [2][-]{subsection.7.3.2}{Prodotto}{section.7.3}% 53
+\BOOKMARK [2][-]{subsection.7.3.3}{Modulo}{section.7.3}% 54
+\BOOKMARK [1][-]{section.7.4}{Coniugato di z}{chapter.7}% 55
+\BOOKMARK [1][-]{section.7.5}{Numeri complessi notevoli}{chapter.7}% 56
+\BOOKMARK [1][-]{section.7.6}{Rappresentazione trigonometrica}{chapter.7}% 57
+\BOOKMARK [1][-]{section.7.7}{Operazioni con rappresentazione trigonometrica}{chapter.7}% 58
+\BOOKMARK [2][-]{subsection.7.7.1}{Prodotto}{section.7.7}% 59
+\BOOKMARK [2][-]{subsection.7.7.2}{Potenza \(formula di De Moivre\)}{section.7.7}% 60
+\BOOKMARK [2][-]{subsection.7.7.3}{Radici n-esime}{section.7.7}% 61
+\BOOKMARK [2][-]{subsection.7.7.4}{Teorema fondamentale dell'algebra}{section.7.7}% 62
+\BOOKMARK [2][-]{subsection.7.7.5}{Notazione Esponenziale}{section.7.7}% 63
+\BOOKMARK [0][-]{chapter.8}{Il principio di induzione}{}% 64
+\BOOKMARK [1][-]{section.8.1}{Definizione di Pn}{chapter.8}% 65
+\BOOKMARK [1][-]{section.8.2}{Principio di induzione debole}{chapter.8}% 66
+\BOOKMARK [1][-]{section.8.3}{Principio di induzione forte}{chapter.8}% 67
+\BOOKMARK [1][-]{section.8.4}{Osservazione}{chapter.8}% 68
+\BOOKMARK [0][-]{chapter.9}{Funzioni}{}% 69
+\BOOKMARK [1][-]{section.9.1}{Definizione}{chapter.9}% 70
+\BOOKMARK [1][-]{section.9.2}{Funzioni particolari}{chapter.9}% 71
+\BOOKMARK [2][-]{subsection.9.2.1}{Funzione costante}{section.9.2}% 72
+\BOOKMARK [2][-]{subsection.9.2.2}{Funzione identit\340}{section.9.2}% 73
+\BOOKMARK [2][-]{subsection.9.2.3}{Funzione restrizione}{section.9.2}% 74
+\BOOKMARK [1][-]{section.9.3}{Insieme Immagine}{chapter.9}% 75
+\BOOKMARK [1][-]{section.9.4}{Iniettivit\340, Suriettivit\340 e Biettivit\340}{chapter.9}% 76
+\BOOKMARK [2][-]{subsection.9.4.1}{Iniettivit\340}{section.9.4}% 77
+\BOOKMARK [2][-]{subsection.9.4.2}{Suriettivit\340}{section.9.4}% 78
+\BOOKMARK [2][-]{subsection.9.4.3}{Biettivit\340}{section.9.4}% 79
+\BOOKMARK [1][-]{section.9.5}{Grafico}{chapter.9}% 80
+\BOOKMARK [1][-]{section.9.6}{Altre funzioni particolari}{chapter.9}% 81
+\BOOKMARK [2][-]{subsection.9.6.1}{Funzione parte intera}{section.9.6}% 82
+\BOOKMARK [2][-]{subsection.9.6.2}{Funzione di Heaviside}{section.9.6}% 83
+\BOOKMARK [2][-]{subsection.9.6.3}{Funzione segno}{section.9.6}% 84
+\BOOKMARK [2][-]{subsection.9.6.4}{Funzione mantissa}{section.9.6}% 85
+\BOOKMARK [2][-]{subsection.9.6.5}{Funzione parte positiva}{section.9.6}% 86
+\BOOKMARK [2][-]{subsection.9.6.6}{Funzione parte negativa}{section.9.6}% 87
+\BOOKMARK [1][-]{section.9.7}{Operazioni tra funzioni}{chapter.9}% 88
+\BOOKMARK [1][-]{section.9.8}{Trasformazioni di funzioni}{chapter.9}% 89
+\BOOKMARK [1][-]{section.9.9}{Propriet\340}{chapter.9}% 90
+\BOOKMARK [2][-]{subsection.9.9.1}{Monotonia}{section.9.9}% 91
+\BOOKMARK [2][-]{subsection.9.9.2}{Parit\340}{section.9.9}% 92
+\BOOKMARK [2][-]{subsection.9.9.3}{Periodicit\340}{section.9.9}% 93
+\BOOKMARK [1][-]{section.9.10}{Estremi di funzione}{chapter.9}% 94
+\BOOKMARK [2][-]{subsection.9.10.1}{Positivit\340}{section.9.10}% 95
+\BOOKMARK [2][-]{subsection.9.10.2}{Limitazione, massimo assoluto, minimo assoluto, estremo superiore e inferiore e caratterizzazione}{section.9.10}% 96
+\BOOKMARK [1][-]{section.9.11}{Successioni}{chapter.9}% 97
+\BOOKMARK [1][-]{section.9.12}{Composizione di funzioni}{chapter.9}% 98
+\BOOKMARK [2][-]{subsection.9.12.1}{Propriet\340}{section.9.12}% 99
+\BOOKMARK [1][-]{section.9.13}{Funzione inversa}{chapter.9}% 100
+\BOOKMARK [2][-]{subsection.9.13.1}{Osservazioni}{section.9.13}% 101
+\BOOKMARK [2][-]{subsection.9.13.2}{Funzioni goniometriche inverse}{section.9.13}% 102
+\BOOKMARK [2][-]{subsection.9.13.3}{Risoluzione di equazioni o disequazioni con metodo grafico}{section.9.13}% 103
+\BOOKMARK [0][-]{chapter.10}{Propriet\340 locali di una funzione}{}% 104
+\BOOKMARK [1][-]{section.10.1}{La vicinanza a un punto}{chapter.10}% 105
+\BOOKMARK [2][-]{subsection.10.1.1}{La distanza}{section.10.1}% 106
+\BOOKMARK [1][-]{section.10.2}{L'intorno}{chapter.10}% 107
+\BOOKMARK [1][-]{section.10.3}{Estremi locali di una funzione}{chapter.10}% 108
+\BOOKMARK [2][-]{subsection.10.3.1}{I numeri reali estesi}{section.10.3}% 109
+\BOOKMARK [2][-]{subsection.10.3.2}{Intorni sferici di pm}{section.10.3}% 110
+\BOOKMARK [2][-]{subsection.10.3.3}{Punto di accumulazione}{section.10.3}% 111
+\BOOKMARK [2][-]{subsection.10.3.4}{Punto isolato}{section.10.3}% 112
+\BOOKMARK [0][-]{chapter.11}{Continuit\340}{}% 113
+\BOOKMARK [1][-]{section.11.1}{Note}{chapter.11}% 114
+\BOOKMARK [0][-]{chapter.12}{I limiti}{}% 115
+\BOOKMARK [1][-]{section.12.1}{Definizione unificata di limite}{chapter.12}% 116
+\BOOKMARK [2][-]{subsection.12.1.1}{Casi particolari}{section.12.1}% 117
+\BOOKMARK [2][-]{subsection.12.1.2}{Note}{section.12.1}% 118
+\BOOKMARK [1][-]{section.12.2}{Limitatezza}{chapter.12}% 119
+\BOOKMARK [1][-]{section.12.3}{Teoremi generali}{chapter.12}% 120
+\BOOKMARK [2][-]{subsection.12.3.1}{Unicit\340 del limite}{section.12.3}% 121
+\BOOKMARK [2][-]{subsection.12.3.2}{Permanenza del segno}{section.12.3}% 122
+\BOOKMARK [1][-]{section.12.4}{Esistenza del limite}{chapter.12}% 123
+\BOOKMARK [1][-]{section.12.5}{Punto di accumulzione sinistro e destro}{chapter.12}% 124
+\BOOKMARK [2][-]{subsection.12.5.1}{Intorno sinistro e destro}{section.12.5}% 125
+\BOOKMARK [1][-]{section.12.6}{Teorema del confronto \(dei due carabinieri\)}{chapter.12}% 126
+\BOOKMARK [1][-]{section.12.7}{Forme indeterminate}{chapter.12}% 127
+\BOOKMARK [2][-]{subsection.12.7.1}{-}{section.12.7}% 128
+\BOOKMARK [2][-]{subsection.12.7.2}{}{section.12.7}% 129
+\BOOKMARK [2][-]{subsection.12.7.3}{00}{section.12.7}% 130
+\BOOKMARK [2][-]{subsection.12.7.4}{Trattare forme indeterminate}{section.12.7}% 131
+\BOOKMARK [2][-]{subsection.12.7.5}{Funzione monotona e esistenza del limite sinistro e destro}{section.12.7}% 132
+\BOOKMARK [1][-]{section.12.8}{Limite di funzioni composte}{chapter.12}% 133
+\BOOKMARK [2][-]{subsection.12.8.1}{Osservazioni}{section.12.8}% 134
+\BOOKMARK [1][-]{section.12.9}{Esistenza del limite}{chapter.12}% 135
+\BOOKMARK [1][-]{section.12.10}{Algebra dei limiti}{chapter.12}% 136
+\BOOKMARK [1][-]{section.12.11}{Parziale estensione dell'algebra dei limiti a barR}{chapter.12}% 137
+\BOOKMARK [2][-]{subsection.12.11.1}{Dimostrazione del teorema sull'algebra dei limiti}{section.12.11}% 138
+\BOOKMARK [1][-]{section.12.12}{Limiti notevoli per le funzioni trigonometriche}{chapter.12}% 139
+\BOOKMARK [2][-]{subsection.12.12.1}{limx0 sinxx=1}{section.12.12}% 140
+\BOOKMARK [2][-]{subsection.12.12.2}{limx0 1-cosxx2=12}{section.12.12}% 141
+\BOOKMARK [2][-]{subsection.12.12.3}{Corollari dei due limiti notevoli dimostrati sopra}{section.12.12}% 142
+\BOOKMARK [0][-]{chapter.13}{Gerarchia degli infiniti}{}% 143
+\BOOKMARK [1][-]{section.13.1}{Osservazioni}{chapter.13}% 144
+\BOOKMARK [1][-]{section.13.2}{Dimostrazione}{chapter.13}% 145
+\BOOKMARK [1][-]{section.13.3}{Altre forme indeterminate}{chapter.13}% 146
+\BOOKMARK [2][-]{subsection.13.3.1}{Limiti di successioni-esercizi}{section.13.3}% 147
+\BOOKMARK [2][-]{subsection.13.3.2}{Gerarchia di infiniti per le successioni}{section.13.3}% 148
+\BOOKMARK [0][-]{chapter.14}{Infinito}{}% 149
+\BOOKMARK [1][-]{section.14.1}{Confronto di infiniti}{chapter.14}% 150
+\BOOKMARK [1][-]{section.14.2}{Infinitesimi}{chapter.14}% 151
+\BOOKMARK [2][-]{subsection.14.2.1}{Regole di calcolo per o\(1\)}{section.14.2}% 152
+\BOOKMARK [1][-]{section.14.3}{Confronto di infinitesimi}{chapter.14}% 153
+\BOOKMARK [1][-]{section.14.4}{Definizione}{chapter.14}% 154
+\BOOKMARK [2][-]{subsection.14.4.1}{Osservazioni}{section.14.4}% 155
+\BOOKMARK [1][-]{section.14.5}{regole di calcolo degli o\(x\)}{chapter.14}% 156
+\BOOKMARK [1][-]{section.14.6}{Linguaggio degli "o-piccoli" nel calcolo dei limiti}{chapter.14}% 157
+\BOOKMARK [1][-]{section.14.7}{Ordine di infinitesimo e di infinito}{chapter.14}% 158
+\BOOKMARK [2][-]{subsection.14.7.1}{Definizione}{section.14.7}% 159
+\BOOKMARK [0][-]{chapter.15}{Asintoti}{}% 160
+\BOOKMARK [1][-]{section.15.1}{Asintoto orizzontale}{chapter.15}% 161
+\BOOKMARK [1][-]{section.15.2}{Asintoto obliquo}{chapter.15}% 162
+\BOOKMARK [1][-]{section.15.3}{Asintoto verticale}{chapter.15}% 163
+\BOOKMARK [2][-]{subsection.15.3.1}{Asintoto verticale da destra}{section.15.3}% 164
+\BOOKMARK [2][-]{subsection.15.3.2}{Asintoto verticale da sinistra}{section.15.3}% 165
+\BOOKMARK [0][-]{chapter.16}{Teorema ponte}{}% 166
+\BOOKMARK [1][-]{section.16.1}{Dimostrare che un limite non esiste}{chapter.16}% 167
+\BOOKMARK [1][-]{section.16.2}{Trovare il valore del limite quando esiste}{chapter.16}% 168
+\BOOKMARK [2][-]{subsection.16.2.1}{Esempio}{section.16.2}% 169
+\BOOKMARK [0][-]{chapter.17}{Continuit\340 e teoremi fondamentali}{}% 170
+\BOOKMARK [1][-]{section.17.1}{Punti di discontinuit\340}{chapter.17}% 171
+\BOOKMARK [1][-]{section.17.2}{Teorema della permanenza del segno}{chapter.17}% 172
+\BOOKMARK [1][-]{section.17.3}{Teorema di esistenza degli zeri}{chapter.17}% 173
+\BOOKMARK [2][-]{subsection.17.3.1}{Osservazioni}{section.17.3}% 174
+\BOOKMARK [2][-]{subsection.17.3.2}{Dimostrazione}{section.17.3}% 175
+\BOOKMARK [2][-]{subsection.17.3.3}{Corollario 1}{section.17.3}% 176
+\BOOKMARK [2][-]{subsection.17.3.4}{Corollario 2, teorema dei valori intermedi}{section.17.3}% 177
+\BOOKMARK [2][-]{subsection.17.3.5}{Corollario 3}{section.17.3}% 178
+\BOOKMARK [1][-]{section.17.4}{Legame tra monotonia, iniettivit\340, continuit\340 di f su un intervallo}{chapter.17}% 179
+\BOOKMARK [2][-]{subsection.17.4.1}{Iniettivit\340 implica la monotonia}{section.17.4}% 180
+\BOOKMARK [1][-]{section.17.5}{Teorema di Weierstrass}{chapter.17}% 181
+\BOOKMARK [2][-]{subsection.17.5.1}{Enunciato}{section.17.5}% 182
+\BOOKMARK [2][-]{subsection.17.5.2}{Conclusioni}{section.17.5}% 183
+\BOOKMARK [0][-]{chapter.18}{La derivata}{}% 184
+\BOOKMARK [1][-]{section.18.1}{Rapporto incrementale}{chapter.18}% 185
+\BOOKMARK [1][-]{section.18.2}{Definizione di derivata}{chapter.18}% 186
+\BOOKMARK [2][-]{subsection.18.2.1}{Derivata destra}{section.18.2}% 187
+\BOOKMARK [2][-]{subsection.18.2.2}{Derivata sinistra}{section.18.2}% 188
+\BOOKMARK [1][-]{section.18.3}{Condizioni di derivabilit\340}{chapter.18}% 189
+\BOOKMARK [1][-]{section.18.4}{Propriet\340 della derivata}{chapter.18}% 190
+\BOOKMARK [1][-]{section.18.5}{Interpretazione geometrica della derivata}{chapter.18}% 191
+\BOOKMARK [1][-]{section.18.6}{Derivate di alcune funzioni elementari}{chapter.18}% 192
+\BOOKMARK [2][-]{subsection.18.6.1}{Dimostrazioni}{section.18.6}% 193
+\BOOKMARK [0][-]{chapter.19}{Punti di non derivabilit\340}{}% 194
+\BOOKMARK [0][-]{chapter.20}{Algebra delle derivate}{}% 195
+\BOOKMARK [1][-]{section.20.1}{Dimostrazione derivata del prodotto}{chapter.20}% 196
+\BOOKMARK [1][-]{section.20.2}{Derivata della funzione composta}{chapter.20}% 197
+\BOOKMARK [1][-]{section.20.3}{Derivata della funzione inversa}{chapter.20}% 198
+\BOOKMARK [1][-]{section.20.4}{Derivate delle funzioni goniometriche inverse}{chapter.20}% 199
+\BOOKMARK [2][-]{subsection.20.4.1}{\(arctanx\)'}{section.20.4}% 200
+\BOOKMARK [2][-]{subsection.20.4.2}{\(arcsinx\)'}{section.20.4}% 201
+\BOOKMARK [0][-]{chapter.21}{Teoremi fondamentali per la classe delle funzioni derivabili}{}% 202
+\BOOKMARK [1][-]{section.21.1}{Primo lemma}{chapter.21}% 203
+\BOOKMARK [1][-]{section.21.2}{Teorema di Fermat}{chapter.21}% 204
+\BOOKMARK [1][-]{section.21.3}{Teorema di Rolle}{chapter.21}% 205
+\BOOKMARK [1][-]{section.21.4}{Teorema del valor medio o di Lagrange}{chapter.21}% 206
+\BOOKMARK [1][-]{section.21.5}{Teorema di Cauchy}{chapter.21}% 207
+\BOOKMARK [1][-]{section.21.6}{Conseguenze del teorema di Lagrange}{chapter.21}% 208
+\BOOKMARK [1][-]{section.21.7}{Monotonia e segno della derivata}{chapter.21}% 209
+\BOOKMARK [2][-]{subsection.21.7.1}{Test di monotonia}{section.21.7}% 210
+\BOOKMARK [2][-]{subsection.21.7.2}{Conseguenze}{section.21.7}% 211
+\BOOKMARK [0][-]{chapter.22}{Forme indeterminate e teorema di de l'Hopital}{}% 212
+\BOOKMARK [1][-]{section.22.1}{Teorema di de l'Hopital}{chapter.22}% 213
+\BOOKMARK [2][-]{subsection.22.1.1}{Corollario}{section.22.1}% 214
+\BOOKMARK [0][-]{chapter.23}{Convessit\340 e concavit\340}{}% 215
+\BOOKMARK [1][-]{section.23.1}{Derivate successive}{chapter.23}% 216
+\BOOKMARK [1][-]{section.23.2}{Funzione convessa o concava}{chapter.23}% 217
+\BOOKMARK [2][-]{subsection.23.2.1}{Funzione convessa}{section.23.2}% 218
+\BOOKMARK [2][-]{subsection.23.2.2}{Funzione concava}{section.23.2}% 219
+\BOOKMARK [2][-]{subsection.23.2.3}{Definizione}{section.23.2}% 220
+\BOOKMARK [2][-]{subsection.23.2.4}{Teorema 1}{section.23.2}% 221
+\BOOKMARK [2][-]{subsection.23.2.5}{Teorema 2}{section.23.2}% 222
+\BOOKMARK [2][-]{subsection.23.2.6}{Definizione}{section.23.2}% 223
+\BOOKMARK [2][-]{subsection.23.2.7}{Teorema 3}{section.23.2}% 224
+\BOOKMARK [0][-]{chapter.24}{Studio di funzione}{}% 225
+\BOOKMARK [0][-]{chapter.25}{Polinomi di Taylor}{}% 226
+\BOOKMARK [1][-]{subsection.25.0.1}{Osservazioni}{chapter.25}% 227
+\BOOKMARK [1][-]{section.25.1}{Formula di Taylor con resto di Peano}{chapter.25}% 228
+\BOOKMARK [1][-]{section.25.2}{Polinomi di Taylor delle funzioni elementari centrati in x0=0}{chapter.25}% 229
+\BOOKMARK [2][-]{subsection.25.2.1}{f\(x\)=ex}{section.25.2}% 230
+\BOOKMARK [2][-]{subsection.25.2.2}{f\(x\)=log\(1+x\)}{section.25.2}% 231
+\BOOKMARK [2][-]{subsection.25.2.3}{f\(x\)=sinx}{section.25.2}% 232
+\BOOKMARK [2][-]{subsection.25.2.4}{f\(x\)=cosx}{section.25.2}% 233
+\BOOKMARK [2][-]{subsection.25.2.5}{f\(x\)=tanx}{section.25.2}% 234
+\BOOKMARK [2][-]{subsection.25.2.6}{f\(x\)=arctanx}{section.25.2}% 235
+\BOOKMARK [2][-]{subsection.25.2.7}{f\(x\)=\(1+x\)}{section.25.2}% 236
+\BOOKMARK [1][-]{section.25.3}{Formula di Taylor con resto di Lagrange}{chapter.25}% 237
+\BOOKMARK [2][-]{subsection.25.3.1}{Applicazioni}{section.25.3}% 238
+\BOOKMARK [0][-]{chapter.26}{Serie numeriche}{}% 239
+\BOOKMARK [1][-]{section.26.1}{Successione delle somme parziali}{chapter.26}% 240
+\BOOKMARK [1][-]{section.26.2}{Convergenza, divergenza, indeterminazione}{chapter.26}% 241
+\BOOKMARK [1][-]{section.26.3}{Somma e prodotto di serie}{chapter.26}% 242
+\BOOKMARK [2][-]{subsection.26.3.1}{Somma}{section.26.3}% 243
+\BOOKMARK [2][-]{subsection.26.3.2}{Prodotto}{section.26.3}% 244
+\BOOKMARK [1][-]{section.26.4}{Criteri di convergenza per serie}{chapter.26}% 245
+\BOOKMARK [2][-]{subsection.26.4.1}{Teorema 1}{section.26.4}% 246
+\BOOKMARK [2][-]{subsection.26.4.2}{Teorema 2}{section.26.4}% 247
+\BOOKMARK [1][-]{section.26.5}{Criteri di convergenza per serie a termini 0, analoghi per 0}{chapter.26}% 248
+\BOOKMARK [2][-]{subsection.26.5.1}{Teorema \(criterio del confronto\)}{section.26.5}% 249
+\BOOKMARK [2][-]{subsection.26.5.2}{Teorema \(criterio del confronto asintotico\)}{section.26.5}% 250
+\BOOKMARK [2][-]{subsection.26.5.3}{Criterio della radice ennesima}{section.26.5}% 251
+\BOOKMARK [2][-]{subsection.26.5.4}{Criterio del rapporto}{section.26.5}% 252
+\BOOKMARK [1][-]{section.26.6}{Serie numeriche di segno qualsiasi}{chapter.26}% 253
+\BOOKMARK [2][-]{subsection.26.6.1}{Criterio della convergenza assoluta}{section.26.6}% 254
+\BOOKMARK [1][-]{section.26.7}{Serie numeriche a segno alterno}{chapter.26}% 255
+\BOOKMARK [2][-]{subsection.26.7.1}{Criterio di Leibniz}{section.26.7}% 256
+\BOOKMARK [0][-]{chapter.27}{Alcune serie}{}% 257
+\BOOKMARK [1][-]{section.27.1}{La serie geometrica}{chapter.27}% 258
+\BOOKMARK [1][-]{section.27.2}{Serie di Mengoli}{chapter.27}% 259
+\BOOKMARK [2][-]{subsection.27.2.1}{Serie telescopica}{section.27.2}% 260
+\BOOKMARK [1][-]{section.27.3}{Serie logaritmica}{chapter.27}% 261
+\BOOKMARK [1][-]{section.27.4}{Serie armonica}{chapter.27}% 262
+\BOOKMARK [2][-]{subsection.27.4.1}{Serie armonica generalizzata}{section.27.4}% 263
+\BOOKMARK [2][-]{subsection.27.4.2}{Scrittura della serie armonica generalizzata}{section.27.4}% 264
+\BOOKMARK [1][-]{section.27.5}{Serie di potenze}{chapter.27}% 265
+\BOOKMARK [2][-]{subsection.27.5.1}{Note}{section.27.5}% 266
+\BOOKMARK [2][-]{subsection.27.5.2}{Raggio di convergenza}{section.27.5}% 267
+\BOOKMARK [2][-]{subsection.27.5.3}{Teorema}{section.27.5}% 268
+\BOOKMARK [2][-]{subsection.27.5.4}{Determinazione del raggio di convergenza}{section.27.5}% 269
+\BOOKMARK [1][-]{section.27.6}{Serie di Taylor}{chapter.27}% 270
+\BOOKMARK [2][-]{subsection.27.6.1}{Definizione}{section.27.6}% 271
+\BOOKMARK [2][-]{subsection.27.6.2}{Condizioni di sviluppabilit\340}{section.27.6}% 272
+\BOOKMARK [0][-]{chapter.28}{Integrali di Riemann}{}% 273
+\BOOKMARK [1][-]{section.28.1}{Metodo di esaustione di Archimede}{chapter.28}% 274
+\BOOKMARK [1][-]{section.28.2}{Definizione di integrale di Riemann}{chapter.28}% 275
+\BOOKMARK [2][-]{subsection.28.2.1}{Definizione}{section.28.2}% 276
+\BOOKMARK [2][-]{subsection.28.2.2}{Interpretazione geometrica dell'integrale}{section.28.2}% 277
+\BOOKMARK [2][-]{subsection.28.2.3}{Teorema \(propriet\340 dell'integrale\)}{section.28.2}% 278
+\BOOKMARK [2][-]{subsection.28.2.4}{Teorema della media integrale}{section.28.2}% 279
+\BOOKMARK [1][-]{section.28.3}{Funzione primitiva}{chapter.28}% 280
+\BOOKMARK [1][-]{section.28.4}{La funzione integrale}{chapter.28}% 281
+\BOOKMARK [1][-]{section.28.5}{Teorema fondamentale del calcolo integrale}{chapter.28}% 282
+\BOOKMARK [1][-]{section.28.6}{Teorema del calcolo dell'integrale per variazione di una primitiva o teorema di Torricelli-Barrow}{chapter.28}% 283
+\BOOKMARK [1][-]{section.28.7}{Notazione}{chapter.28}% 284
+\BOOKMARK [1][-]{section.28.8}{Tabella delle primitive immediate}{chapter.28}% 285
+\BOOKMARK [2][-]{subsection.28.8.1}{Osservazioni}{section.28.8}% 286
+\BOOKMARK [1][-]{section.28.9}{Integrazione per parti}{chapter.28}% 287
+\BOOKMARK [1][-]{section.28.10}{Integrazione per sostituzione}{chapter.28}% 288
+\BOOKMARK [2][-]{subsection.28.10.1}{Sostituzioni per funzioni razionali in seno e coseno}{section.28.10}% 289
+\BOOKMARK [2][-]{subsection.28.10.2}{Altra sostituzione utile: le funzioni iperboliche}{section.28.10}% 290
+\BOOKMARK [1][-]{section.28.11}{Integrazione delle funzioni razionali}{chapter.28}% 291
+\BOOKMARK [2][-]{subsection.28.11.1}{m=1}{section.28.11}% 292
+\BOOKMARK [2][-]{subsection.28.11.2}{m=2}{section.28.11}% 293
+\BOOKMARK [0][-]{chapter.29}{Integrali generalizzati}{}% 294
+\BOOKMARK [1][-]{section.29.1}{Integrazione per funzioni illimitate}{chapter.29}% 295
+\BOOKMARK [1][-]{section.29.2}{Integrazioni per intervalli illimitati}{chapter.29}% 296
+\BOOKMARK [1][-]{section.29.3}{Integrali impropri notevoli}{chapter.29}% 297
+\BOOKMARK [1][-]{section.29.4}{Integrale di sottointervalli di una funzione}{chapter.29}% 298
+\BOOKMARK [1][-]{section.29.5}{Criteri di convergenza}{chapter.29}% 299
+\BOOKMARK [2][-]{subsection.29.5.1}{Criterio del confronto}{section.29.5}% 300
+\BOOKMARK [2][-]{subsection.29.5.2}{Criterio del confronto asintotico}{section.29.5}% 301
+\BOOKMARK [1][-]{section.29.6}{Funzioni assolutamente integrabili}{chapter.29}% 302
+\BOOKMARK [1][-]{section.29.7}{Serie e integrali generalizzati}{chapter.29}% 303
+\BOOKMARK [2][-]{subsection.29.7.1}{Criterio dell'integrale}{section.29.7}% 304
+\BOOKMARK [2][-]{subsection.29.7.2}{Convergenza della funzione gaussiana: f\(x\)=e-x2}{section.29.7}% 305
+\BOOKMARK [0][-]{chapter.30}{Cenni sulle equazioni differenziali ordinarie}{}% 306
+\BOOKMARK [1][-]{section.30.1}{Esempi}{chapter.30}% 307
+\BOOKMARK [1][-]{section.30.2}{Problema di Cauchy}{chapter.30}% 308
+\BOOKMARK [2][-]{subsection.30.2.1}{Esistenza locale di un problema di Cauchy}{section.30.2}% 309
+\BOOKMARK [1][-]{section.30.3}{Metodi risolutivi}{chapter.30}% 310
+\BOOKMARK [2][-]{subsection.30.3.1}{Equazioni differenziali del primo ordine a variabili separabili}{section.30.3}% 311
+\BOOKMARK [2][-]{subsection.30.3.2}{Equazioni differenziali del primo ordine a coefficienti costanti}{section.30.3}% 312
+\BOOKMARK [2][-]{subsection.30.3.3}{Equazioni differenziali del secondo ordine lineari a coefficienti costanti}{section.30.3}% 313
